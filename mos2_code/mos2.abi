@@ -15,8 +15,7 @@ znucl2 16                  # possible type(s) of atom. The pseudopotential(s)
                   # to the type(s) of atom. Here, the only type is Silicon.
 pp_dirpath "./persudo/"        # This is the path to the directory were
                                 # pseudopotentials for tests are stored
-pseudos1 "Mo.psp8"
-pseudos2 "S.psp8"
+pseudos "Mo.psp8, S.psp8"
                                 # Name and location of the pseudopotential
 
 #Definition of the atoms
