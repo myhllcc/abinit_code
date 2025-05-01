@@ -13,9 +13,9 @@ znucl 14          # The keyword "znucl" refers to the atomic number of the
                   # possible type(s) of atom. The pseudopotential(s)
                   # mentioned in the "files" file must correspond
                   # to the type(s) of atom. Here, the only type is Silicon.
-pp_dirpath "$ABI_PSPDIR"        # This is the path to the directory were
+pp_dirpath "/home/mmm1483/Scratch/abinit_code/basic1/persudo/"        # This is the path to the directory were
                                 # pseudopotentials for tests are stored
-pseudos "Psdj_nc_sr_04_pw_std_psp8/Si.psp8"
+pseudos "H.psp8" 
                                 # Name and location of the pseudopotential
 
 #Definition of the atoms
