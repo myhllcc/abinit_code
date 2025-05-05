@@ -38,7 +38,7 @@ nshiftk1 1         # of the reciprocal space (that form a BCC lattice !),
                   # repeated four times, with different shifts :
 shiftk1 0 0 0
 prtden1 1
-toldfel 1.0d-6
+toldfe1 1.0d-6
 
 #dataset 2: The band structure
 iscf2 -2
@@ -51,4 +51,4 @@ kptbounds2 0    0    0 # gamma
            0.5  0    0 #M
             1    1    1 #gamma
 tolwfr2   1.0d-12
-enuit2   1
+enunit2   1
