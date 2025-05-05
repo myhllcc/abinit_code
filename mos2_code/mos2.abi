@@ -23,17 +23,17 @@ xred
 
 # Plane-wave basis
 ecut  12.0
+nsym 1
+chksymbreak 0
 
 # K-point sampling
 kptopt 1          # Option for the automatic generation of k points, taking
                   # into account the symmetry
-ngkpt 2 2 2       # This is a 2x2x2 grid based on the primitive vectors
-nshiftk 4         # of the reciprocal space (that form a BCC lattice !),
+ngkpt 3 1 1       # This is a 2x2x2 grid based on the primitive vectors
+nshiftk 1         # of the reciprocal space (that form a BCC lattice !),
                   # repeated four times, with different shifts :
-shiftk 0.5 0.5 0.5
-       0.5 0.0 0.0
-       0.0 0.5 0.0
-       0.0 0.0 0.5
+shiftk 0 0 0
+nkpt 2
 
 # SCF settings
 nstep 10
