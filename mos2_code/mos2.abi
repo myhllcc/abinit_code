@@ -52,8 +52,3 @@ kptbounds2 0    0    0 # gamma
             1    1    1 #gamma
 tolwfr2   1.0d-12
 enuit2   1
-
-# SCF settings
-nstep 10
-toldfe 1.0d-6
-diemac 12.0
