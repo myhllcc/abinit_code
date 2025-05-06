@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see https://www.abinit.org .
 
-.Starting date : Mon  5 May 2025.
-- ( at 17h04 )
+.Starting date : Tue  6 May 2025.
+- ( at 15h24 )
   
 - input  file    -> mos2.abi
 - output file    -> mos2.abo
@@ -25,11 +25,15 @@
  
 --- !ERROR
 src_file: m_parser.F90
-src_line: 1478
+src_line: 2054
 mpi_rank: 0
 message: |
-    There are two occurences of the keyword " NSTEP " in the input file.
-    This is confusing, so it has been forbidden.
-    Action: remove one of the two occurences.
+    An error occurred reading data for keyword ` KPTBOUNDS2`,
+    looking for 12 elements.
+    There is a problem with the input string:
+     TOLWFR2 1.0D-12 ENUNIT2 1
+    Maybe a disagreement between the declared dimension of the array,
+    and the number of items provided. 
+    Action: correct your input file and especially the keyword:  KPTBOUNDS2
 ...
  
