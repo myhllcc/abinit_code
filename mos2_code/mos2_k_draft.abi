@@ -1,0 +1,44 @@
+ndtset 3  udtset 3 1
+# Unit cell
+acell  3.15 3.15 20 angstrom
+ecut 25
+nsym 1
+chksymbreak 0
+
+#first dataset: find optimal bond length
+ionmov 2
+ntime 10
+tolmxf 5.0d-4 #stopping when residual force
+toldff 5.0d-5
+
+xred   1/3  2/3  0.0
+         2/3  1/3  -0.0919442350
+         2/3  1/3  0.0919442350
+
+rprim
+ 0.5 -0.86602540378 0
+ 0.5  0.86602540378 0
+ 0.0  0.0           1
+
+# Atom types
+ntypat 2
+znucl 42 16
+pp_dirpath "./persudo/"
+pseudos "Mo.psp8, S.psp8"
+
+# Atomic structure
+natom 3
+typat 1 2 2
+
+#defination of k-point grid
+kptopt 1
+ngkpt1 2 2 1
+ngkpt2 4 4 1
+ngkpt3 6 6 1
+
+getwfk -1 #spped up the calculation
+
+#defination of scf
+nstep 10
+
+
