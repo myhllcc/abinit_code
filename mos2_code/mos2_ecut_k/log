@@ -36826,3 +36826,1300 @@ message: |
 {SCF_istep: 3 , Vnl|psi>: 1460 , wall_time: '  4.50 [s] '} <<< TIME
  
  ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3890E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.8438    0.1250    0.3657
+   Integrated=    2.6000E+01
+ ETOT  4  -92.382899040787    -3.344E-02 2.739E-04 1.429E+01 3.756E-02 4.710E-03
+ scprqt: <Vxc>= -1.4362466E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.519      0.193      0.290     -0.150E-02
+{SCF_istep: 4 , Vnl|psi>: 1456 , wall_time: '  4.50 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3889E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0938    0.3657
+   Integrated=    2.6000E+01
+ ETOT  5  -92.382965983357    -6.694E-05 5.631E-05 1.173E+01 1.464E-04 4.857E-03
+ scprqt: <Vxc>= -1.4365372E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.691      0.323     -0.413E-02 -0.843E-02 -0.131E-02
+{SCF_istep: 5 , Vnl|psi>: 1493 , wall_time: '  4.62 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3899E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  6  -92.382985825011    -1.984E-05 4.361E-05 9.303E+00 1.095E-03 3.762E-03
+ scprqt: <Vxc>= -1.4368059E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.894     -0.154E-01  0.224     -0.413E-01 -0.603E-01
+{SCF_istep: 6 , Vnl|psi>: 1459 , wall_time: '  4.51 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3907E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  7  -92.382989572926    -3.748E-06 8.183E-05 8.261E+00 9.752E-06 3.765E-03
+ scprqt: <Vxc>= -1.4371481E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.832      0.606     -0.448      0.129     -0.512E-01
+{SCF_istep: 7 , Vnl|psi>: 1494 , wall_time: '  4.81 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3907E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  8  -92.382995871221    -6.298E-06 6.313E-05 6.730E+00 2.165E-04 3.548E-03
+ scprqt: <Vxc>= -1.4375454E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.91      -1.08      0.370     -0.204      0.261E-01
+{SCF_istep: 8 , Vnl|psi>: 1494 , wall_time: '  4.66 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3897E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  9  -92.383003419823    -7.549E-06 1.249E-04 4.783E+00 3.503E-04 3.198E-03
+ scprqt: <Vxc>= -1.4380707E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.40     -0.376      0.168E-01  0.273E-01 -0.540E-01
+{SCF_istep: 9 , Vnl|psi>: 1456 , wall_time: '  4.49 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3892E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 10  -92.383005840086    -2.420E-06 9.240E-05 3.747E+00 1.887E-04 3.009E-03
+ scprqt: <Vxc>= -1.4383701E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.667      0.664     -0.348      0.358E-01 -0.130E-03
+{SCF_istep: 10 , Vnl|psi>: 1476 , wall_time: '  5.12 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3892E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 11  -92.383006307149    -4.671E-07 1.797E-04 3.380E+00 4.040E-05 2.969E-03
+ scprqt: <Vxc>= -1.4384651E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.20      -1.14      0.588E-01 -0.175      0.155
+{SCF_istep: 11 , Vnl|psi>: 1461 , wall_time: '  4.88 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3893E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 12  -92.383006975786    -6.686E-07 1.277E-04 2.660E+00 5.895E-05 2.910E-03
+ scprqt: <Vxc>= -1.4386853E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.626      0.703     -0.139     -0.981E-01 -0.168
+{SCF_istep: 12 , Vnl|psi>: 1460 , wall_time: '  4.52 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    13
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3894E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 13  -92.383006901543     7.424E-08 2.400E-04 2.543E+00 1.494E-05 2.925E-03
+ scprqt: <Vxc>= -1.4387049E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.50      -1.74     -0.875       1.36     -0.710E-01
+{SCF_istep: 13 , Vnl|psi>: 1494 , wall_time: '  4.63 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    14
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3892E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 14  -92.383007376205    -4.747E-07 1.613E-04 2.212E+00 6.016E-05 2.865E-03
+ scprqt: <Vxc>= -1.4388035E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.36       1.22     -0.601      -2.13       1.42
+{SCF_istep: 14 , Vnl|psi>: 1466 , wall_time: '  4.54 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    15
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3890E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 15  -92.383007994204    -6.180E-07 2.892E-04 1.399E+00 9.928E-05 2.765E-03
+ scprqt: <Vxc>= -1.4390770E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.496E-01   1.23       1.11     -0.484      -1.90
+{SCF_istep: 15 , Vnl|psi>: 1494 , wall_time: '  4.67 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    16
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3891E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 16  -92.383007923198     7.101E-08 1.835E-04 1.437E+00 2.159E-05 2.787E-03
+ scprqt: <Vxc>= -1.4390550E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  -2.98       3.26      0.528       1.40     -0.319
+{SCF_istep: 16 , Vnl|psi>: 1457 , wall_time: '  4.68 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    17
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3892E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 17  -92.383007928861    -5.663E-09 3.144E-04 1.380E+00 7.913E-06 2.795E-03
+ scprqt: <Vxc>= -1.4390829E-01 hartree
+ 
+ At SCF step   17, forces are converged : 
+  for the second time, max diff in force=  7.913E-06 < toldff=  5.000E-05
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.999030E+01 Ha ,    8.160776E+02 eV
+ Evext_l    = :    -6.088944E+02 Ha ,   -1.656886E+04 eV
+ Evext_nl   = :     1.161163E+01 Ha ,    3.159685E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.835192E+02 Ha ,    7.714949E+03 eV
+ Exc_ks     = :    -1.661307E+01 Ha ,   -4.520647E+02 eV
+ Enn        = :     2.072403E+02 Ha ,    5.639294E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.238301E+01 Ha ,   -2.513869E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -2.51642512E-05  sigma(3 2)= -7.36869920E-11
+  sigma(2 2)= -2.41828452E-05  sigma(3 1)= -1.22434069E-10
+  sigma(3 3)=  1.43739937E-05  sigma(2 1)=  2.88579485E-10
+ 
+ 
+ fftdatar_write: About to write data to: mos2_ecut_ko_DS63_TIM5_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.20 [s] , cpu:  0.01 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2_ecut_ko_DS63_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.50926829
+    2        2.00000          3.94269443
+    3        2.00000          3.94269402
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631749293012E+00  1.71864762552434E+00 -7.15875253983687E-07
+  2.97631949804584E+00 -1.71851285754663E+00 -2.98963415691099E+00
+  2.97631898690871E+00 -1.71851314710690E+00  2.98963487278624E+00
+ Reduced coordinates (xred)
+  3.33307023004802E-01  6.66692585113513E-01 -1.89412434300872E-08
+  6.66679850722280E-01  3.33320431085902E-01 -7.91023128929737E-02
+  6.66679792939585E-01  3.33320317133918E-01  7.91023318342171E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 2.79487E-03 1.31747E-03 (free atoms)
+  3.99694186072669E-07 -2.35650640058776E-05  3.31984573514724E-07
+ -2.74686628554603E-07  1.17689027410230E-05  2.79453567422760E-03
+ -1.25007557518066E-07  1.17961612648546E-05 -2.79486765880111E-03
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+ -1.22670706735507E-04  1.20291472207468E-04 -1.25471984857134E-05
+  6.14878389867711E-05 -5.98527291107193E-05 -1.05618141857382E-01
+  6.11828677487364E-05 -6.04387430967486E-05  1.05630689055868E-01
+ Total energy (etotal) [Ha]= -9.23830079288614E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-1.15378E-03
+           Relative     =-1.24891E-05
+ fconv : at Broyd/MD step   5, gradients have not converged yet. 
+  max grad (force/stress) = 2.7949E-03 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 5 , wall_time: ' 01:33 [minutes] '} <<< TIME
+ 
+--- Iteration: ( 6/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631796275429E+00  1.71862572498771E+00 -3.27167603083997E-07
+  2.97631925957132E+00 -1.71850191787034E+00 -2.97361551494546E+00
+  2.97631875555905E+00 -1.71850218624658E+00  2.97361584211307E+00
+ Reduced coordinates (xred)
+  3.33309226079538E-01  6.66690539892901E-01 -8.65648194705352E-09
+  6.66678749613777E-01  3.33321452070420E-01 -7.86784778809378E-02
+  6.66678690973352E-01  3.33321341370013E-01  7.86784865374197E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  32  32 216
+         ecut(hartree)=     35.000   => boxcut(ratio)=   2.01856
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4020E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  1  -92.382512016851    -9.238E+01 3.316E-04 6.098E+01 7.421E-03 1.022E-02
+ scprqt: <Vxc>= -1.4357716E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    41.9961583829157
+{SCF_istep: 1 , Vnl|psi>: 4429 , wall_time: ' 10.79 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3667E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  2  -92.382521993706    -9.977E-06 2.939E-04 5.418E+00 1.547E-02 5.252E-03
+ scprqt: <Vxc>= -1.4366439E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.974      0.260E-01
+{SCF_istep: 2 , Vnl|psi>: 2754 , wall_time: '  8.60 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4488E-01  at reduced coord.    0.2500    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  3  -92.381156204731     1.366E-03 2.119E-04 3.564E+01 1.443E-02 9.176E-03
+ scprqt: <Vxc>= -1.4360411E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.358      0.643     -0.177E-02
+{SCF_istep: 3 , Vnl|psi>: 1458 , wall_time: '  4.59 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3951E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  4  -92.383035309235    -1.879E-03 2.327E-04 8.531E-01 8.920E-03 2.555E-04
+ scprqt: <Vxc>= -1.4363984E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.421      0.203      0.377     -0.116E-02
+{SCF_istep: 4 , Vnl|psi>: 1462 , wall_time: '  4.69 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3946E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  5  -92.383039695264    -4.386E-06 1.475E-04 6.855E-01 7.519E-05 1.803E-04
+ scprqt: <Vxc>= -1.4366722E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.734      0.234      0.563E-02  0.270E-01 -0.337E-03
+{SCF_istep: 5 , Vnl|psi>: 1494 , wall_time: '  4.70 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3945E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  6  -92.383041362770    -1.668E-06 1.674E-04 5.042E-01 2.895E-04 1.094E-04
+ scprqt: <Vxc>= -1.4367701E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.502      0.179      0.332     -0.103E-01 -0.273E-02
+{SCF_istep: 6 , Vnl|psi>: 1459 , wall_time: '  4.50 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3944E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0313    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  7  -92.383041599623    -2.369E-07 1.094E-04 4.587E-01 2.729E-06 1.121E-04
+ scprqt: <Vxc>= -1.4368213E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.22      0.109     -0.248      0.755E-01 -0.599E-01
+{SCF_istep: 7 , Vnl|psi>: 1494 , wall_time: '  4.62 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3946E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  8  -92.383042263172    -6.635E-07 1.378E-04 3.309E-01 1.031E-04 2.152E-04
+ scprqt: <Vxc>= -1.4369694E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.928      0.385      0.303E-01 -0.268      0.566E-01
+{SCF_istep: 8 , Vnl|psi>: 1468 , wall_time: '  4.55 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3944E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT  9  -92.383042683686    -4.205E-07 8.710E-05 2.463E-01 6.974E-05 2.850E-04
+ scprqt: <Vxc>= -1.4370905E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.324      0.465      0.422      0.130     -0.283
+{SCF_istep: 9 , Vnl|psi>: 1470 , wall_time: '  4.56 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3944E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 10  -92.383042696759    -1.307E-08 1.050E-04 2.416E-01 2.440E-06 2.825E-04
+ scprqt: <Vxc>= -1.4370906E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   4.99      -4.38     -0.548E-01  0.868      0.151E-01
+{SCF_istep: 10 , Vnl|psi>: 1473 , wall_time: '  4.58 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3944E-01  at reduced coord.    0.2500    0.7500    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+   Integrated=    2.6000E+01
+ ETOT 11  -92.383042652320     4.444E-08 6.140E-05 2.316E-01 2.140E-05 2.611E-04
+ scprqt: <Vxc>= -1.4371089E-01 hartree
+ 
+ At SCF step   11, forces are converged : 
+  for the second time, max diff in force=  2.140E-05 < toldff=  5.000E-05
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     3.000855E+01 Ha ,    8.165741E+02 eV
+ Evext_l    = :    -6.100707E+02 Ha ,   -1.660087E+04 eV
+ Evext_nl   = :     1.161381E+01 Ha ,    3.160279E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.840936E+02 Ha ,    7.730581E+03 eV
+ Exc_ks     = :    -1.661960E+01 Ha ,   -4.522422E+02 eV
+ Enn        = :     2.078281E+02 Ha ,    5.655290E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.238304E+01 Ha ,   -2.513870E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -3.05893020E-05  sigma(3 2)= -5.68639174E-11
+  sigma(2 2)= -2.96048005E-05  sigma(3 1)= -1.41438272E-10
+  sigma(3 3)= -1.35619887E-06  sigma(2 1)=  7.75422729E-10
+ 
+ 
+ fftdatar_write: About to write data to: mos2_ecut_ko_DS63_TIM6_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2_ecut_ko_DS63_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.51458742
+    2        2.00000          3.94069364
+    3        2.00000          3.94069342
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631796275429E+00  1.71862572498771E+00 -3.27167603083997E-07
+  2.97631925957132E+00 -1.71850191787034E+00 -2.97361551494546E+00
+  2.97631875555905E+00 -1.71850218624658E+00  2.97361584211307E+00
+ Reduced coordinates (xred)
+  3.33309226079538E-01  6.66690539892901E-01 -8.65648194705352E-09
+  6.66678749613777E-01  3.33321452070420E-01 -7.86784778809378E-02
+  6.66678690973352E-01  3.33321341370013E-01  7.86784865374197E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 2.61137E-04 1.23267E-04 (free atoms)
+ -3.10676566904295E-07 -1.75248550302033E-05  1.77965882697039E-07
+  1.25631767820772E-07  8.75001014921410E-06 -2.61137324870147E-04
+  1.85044799083523E-07  8.77484488098915E-06  2.60959358987450E-04
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+ -8.94183234807418E-05  9.12676684069077E-05 -6.72613558589313E-06
+  4.47335645979466E-05 -4.54814049474770E-05  9.86956054157930E-03
+  4.46847588827952E-05 -4.57862634594307E-05 -9.86283440599341E-03
+ Total energy (etotal) [Ha]= -9.23830426523202E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-3.47235E-05
+           Relative     =-3.75864E-07
+ 
+ At Broyd/MD step   6, gradients are converged : 
+  max grad (force/stress) = 2.6114E-04 < tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+================================================================================
+ 
+ ----iterations are completed or convergence reached----
+ 
+ 
+ === Gap info ===
+  >>>> For spin  1
+   Minimum direct gap =   2.2166 [eV], located at k-point      :   0.2500  0.4167  0.5000
+   Fundamental gap    =   2.1852 [eV], Top of valence bands at :  -0.0833  0.0833  0.5000
+                                       Bottom of conduction at :   0.0833  0.2500  0.5000
+ Mean square residual over all n,k,spin=   24.408E-08; max=  61.404E-06
+   0.0833  0.0833  0.5000    1  2.09572E-10 kpt; spin; max resid(k); each band:
+  5.30E-13 1.35E-13 1.52E-13 1.34E-13 2.10E-11 1.52E-11 3.35E-11 1.76E-11
+  1.99E-11 2.10E-11 2.13E-11 2.05E-11 2.46E-11 2.10E-10
+   0.2500  0.0833  0.5000    1  6.93778E-09 kpt; spin; max resid(k); each band:
+  4.97E-13 3.59E-13 8.08E-14 1.49E-13 2.00E-11 1.74E-11 2.28E-11 1.57E-11
+  2.65E-11 1.87E-11 2.48E-11 1.28E-11 1.92E-11 6.94E-09
+   0.4167  0.0833  0.5000    1  8.62999E-09 kpt; spin; max resid(k); each band:
+  3.95E-13 4.37E-13 3.57E-14 1.64E-13 1.95E-11 1.90E-11 1.30E-11 9.33E-12
+  2.71E-11 1.28E-11 1.95E-11 1.30E-11 1.99E-11 8.63E-09
+  -0.4167  0.0833  0.5000    1  3.23485E-08 kpt; spin; max resid(k); each band:
+  4.46E-13 4.13E-13 5.33E-14 1.51E-13 1.96E-11 1.84E-11 1.80E-11 1.13E-11
+  2.52E-11 1.51E-11 1.67E-11 1.51E-11 2.02E-11 3.23E-08
+  -0.2500  0.0833  0.5000    1  1.63616E-10 kpt; spin; max resid(k); each band:
+  5.26E-13 1.10E-13 2.89E-13 1.10E-13 2.06E-11 1.63E-11 2.97E-11 2.34E-11
+  1.98E-11 1.94E-11 2.74E-11 1.37E-11 2.28E-11 1.64E-10
+  -0.0833  0.0833  0.5000    1  2.38978E-10 kpt; spin; max resid(k); each band:
+  5.27E-13 1.41E-13 1.75E-13 7.51E-14 2.12E-11 1.46E-11 3.49E-11 1.64E-11
+  1.00E-11 1.94E-11 1.27E-11 2.57E-11 2.57E-11 2.39E-10
+   0.0833  0.2500  0.5000    1  6.93535E-09 kpt; spin; max resid(k); each band:
+  4.90E-13 3.47E-13 8.12E-14 1.70E-13 2.00E-11 1.74E-11 2.27E-11 1.59E-11
+  2.66E-11 1.86E-11 2.45E-11 1.28E-11 1.91E-11 6.94E-09
+   0.2500  0.2500  0.5000    1  2.28299E-11 kpt; spin; max resid(k); each band:
+  4.28E-13 3.74E-13 2.80E-13 3.72E-14 1.94E-11 1.87E-11 1.67E-11 1.19E-11
+  2.28E-11 1.39E-11 1.39E-11 1.49E-11 1.68E-11 2.03E-11
+   0.4167  0.2500  0.5000    1  6.95908E-11 kpt; spin; max resid(k); each band:
+  3.92E-13 3.25E-13 2.94E-13 2.68E-14 1.93E-11 1.89E-11 9.92E-12 1.08E-11
+  2.17E-11 1.68E-11 8.32E-12 2.22E-11 1.57E-11 6.96E-11
+  -0.4167  0.2500  0.5000    1  1.74659E-09 kpt; spin; max resid(k); each band:
+  4.70E-13 3.76E-13 5.87E-14 1.64E-13 1.98E-11 1.81E-11 2.09E-11 1.31E-11
+  2.62E-11 1.71E-11 1.51E-11 1.30E-11 1.81E-11 1.75E-09
+  -0.2500  0.2500  0.5000    1  3.23677E-11 kpt; spin; max resid(k); each band:
+  5.16E-13 3.66E-13 9.54E-14 9.99E-14 2.05E-11 1.66E-11 2.85E-11 2.58E-11
+  1.86E-11 9.48E-12 3.24E-11 1.27E-11 2.16E-11 3.20E-11
+  -0.0833  0.2500  0.5000    1  1.64265E-10 kpt; spin; max resid(k); each band:
+  5.25E-13 1.10E-13 2.66E-13 1.32E-13 2.07E-11 1.62E-11 2.95E-11 2.35E-11
+  1.99E-11 1.93E-11 2.76E-11 1.38E-11 2.26E-11 1.64E-10
+   0.0833  0.4167  0.5000    1  8.57094E-09 kpt; spin; max resid(k); each band:
+  3.83E-13 4.16E-13 3.74E-14 1.87E-13 1.95E-11 1.90E-11 1.30E-11 9.34E-12
+  2.68E-11 1.27E-11 1.96E-11 1.29E-11 1.96E-11 8.57E-09
+   0.2500  0.4167  0.5000    1  6.29801E-11 kpt; spin; max resid(k); each band:
+  3.73E-13 3.04E-13 3.17E-13 2.72E-14 1.94E-11 1.88E-11 9.87E-12 1.09E-11
+  2.15E-11 1.68E-11 8.31E-12 2.23E-11 1.55E-11 6.30E-11
+   0.4167  0.4167  0.5000    1  4.88587E-11 kpt; spin; max resid(k); each band:
+  3.78E-13 4.22E-13 3.18E-14 1.81E-13 1.95E-11 1.88E-11 1.26E-11 9.81E-12
+  2.68E-11 1.26E-11 1.17E-11 2.09E-11 1.62E-11 4.89E-11
+  -0.4167  0.4167  0.5000    1  6.14042E-05 kpt; spin; max resid(k); each band:
+  3.95E-13 4.47E-13 4.67E-14 1.13E-13 1.97E-11 1.86E-11 1.51E-11 9.00E-12
+  2.47E-11 7.75E-12 1.90E-11 9.06E-12 2.13E-11 6.14E-05
+  -0.2500  0.4167  0.5000    1  1.76153E-09 kpt; spin; max resid(k); each band:
+  4.71E-13 4.26E-13 5.91E-14 1.73E-13 1.99E-11 1.80E-11 2.09E-11 1.30E-11
+  2.61E-11 1.71E-11 1.53E-11 1.31E-11 1.81E-11 1.76E-09
+  -0.0833  0.4167  0.5000    1  3.23529E-08 kpt; spin; max resid(k); each band:
+  4.42E-13 4.64E-13 5.49E-14 1.78E-13 1.97E-11 1.84E-11 1.79E-11 1.13E-11
+  2.50E-11 1.50E-11 1.68E-11 1.50E-11 2.00E-11 3.24E-08
+ 
+   outwf: writing wavefunctions to: mos2_ecut_ko_DS63_WFK with iomode: IO_MODE_FORTRAN_MASTER
+ WFK output , wall:  0.06 [s] , cpu:  0.06 [s] <<< TIME
+ prteigrs : about to open file mos2_ecut_ko_DS63_EIG
+ Fermi (or HOMO) energy (hartree) =  -0.06728   Average Vxc (hartree)=  -0.14371
+ Eigenvalues (hartree) for nkpt=  18  k points:
+ kpt#   1, nband= 14, wtk=  0.05556, kpt=  0.0833  0.0833  0.5000 (reduced coord)
+  -2.29759   -1.34764   -1.34203   -1.33986   -0.57079   -0.53003   -0.25787   -0.17784
+  -0.16224   -0.14350   -0.13466   -0.09753   -0.07183    0.02658
+ kpt#   2, nband= 14, wtk=  0.05556, kpt=  0.2500  0.0833  0.5000 (reduced coord)
+  -2.29685   -1.34880   -1.34621   -1.34179   -0.53913   -0.51670   -0.24767   -0.20656
+  -0.20321   -0.16981   -0.12360   -0.11067   -0.09329    0.01303
+ kpt#   3, nband= 14, wtk=  0.05556, kpt=  0.4167  0.0833  0.5000 (reduced coord)
+  -2.29631   -1.35363   -1.34516   -1.34319   -0.51023   -0.50502   -0.27138   -0.24198
+  -0.21009   -0.17789   -0.13157   -0.11525   -0.07923    0.02507
+ kpt#   4, nband= 14, wtk=  0.05556, kpt= -0.4167  0.0833  0.5000 (reduced coord)
+  -2.29651   -1.35187   -1.34554   -1.34267   -0.52163   -0.50954   -0.26102   -0.22889
+  -0.20503   -0.17602   -0.12355   -0.12007   -0.08819    0.01978
+ kpt#   5, nband= 14, wtk=  0.05556, kpt= -0.2500  0.0833  0.5000 (reduced coord)
+  -2.29725   -1.34698   -1.34521   -1.34075   -0.55690   -0.52415   -0.24688   -0.19596
+  -0.18232   -0.15575   -0.13185   -0.09916   -0.08354    0.01485
+ kpt#   6, nband= 14, wtk=  0.05556, kpt= -0.0833  0.0833  0.5000 (reduced coord)
+  -2.29778   -1.34802   -1.34017   -1.33936   -0.57834   -0.53323   -0.26592   -0.16374
+  -0.15090   -0.14648   -0.12007   -0.10410   -0.06728    0.04003
+ kpt#   7, nband= 14, wtk=  0.05556, kpt=  0.0833  0.2500  0.5000 (reduced coord)
+  -2.29685   -1.34880   -1.34621   -1.34179   -0.53913   -0.51670   -0.24767   -0.20656
+  -0.20321   -0.16981   -0.12360   -0.11067   -0.09329    0.01303
+ kpt#   8, nband= 14, wtk=  0.05556, kpt=  0.2500  0.2500  0.5000 (reduced coord)
+  -2.29632   -1.35140   -1.34550   -1.34516   -0.51108   -0.50438   -0.25150   -0.24440
+  -0.19399   -0.18264   -0.16933   -0.12336   -0.07987    0.01999
+ kpt#   9, nband= 14, wtk=  0.05556, kpt=  0.4167  0.2500  0.5000 (reduced coord)
+  -2.29617   -1.35159   -1.34700   -1.34488   -0.50257   -0.50047   -0.25749   -0.24720
+  -0.20275   -0.17989   -0.17519   -0.13616   -0.06839    0.01307
+ kpt#  10, nband= 14, wtk=  0.05556, kpt= -0.4167  0.2500  0.5000 (reduced coord)
+  -2.29656   -1.35050   -1.34565   -1.34347   -0.52475   -0.51047   -0.25104   -0.22352
+  -0.19840   -0.18421   -0.14349   -0.11223   -0.08825    0.01432
+ kpt#  11, nband= 14, wtk=  0.05556, kpt= -0.2500  0.2500  0.5000 (reduced coord)
+  -2.29710   -1.34678   -1.34670   -1.34087   -0.55062   -0.52154   -0.24634   -0.20117
+  -0.19480   -0.15107   -0.12366   -0.11205   -0.09000    0.01721
+ kpt#  12, nband= 14, wtk=  0.05556, kpt= -0.0833  0.2500  0.5000 (reduced coord)
+  -2.29725   -1.34698   -1.34521   -1.34075   -0.55690   -0.52415   -0.24688   -0.19596
+  -0.18232   -0.15575   -0.13185   -0.09916   -0.08354    0.01485
+ kpt#  13, nband= 14, wtk=  0.05556, kpt=  0.0833  0.4167  0.5000 (reduced coord)
+  -2.29631   -1.35363   -1.34516   -1.34319   -0.51023   -0.50502   -0.27138   -0.24198
+  -0.21009   -0.17789   -0.13157   -0.11525   -0.07923    0.02507
+ kpt#  14, nband= 14, wtk=  0.05556, kpt=  0.2500  0.4167  0.5000 (reduced coord)
+  -2.29617   -1.35159   -1.34700   -1.34488   -0.50257   -0.50047   -0.25749   -0.24720
+  -0.20275   -0.17989   -0.17519   -0.13616   -0.06839    0.01307
+ kpt#  15, nband= 14, wtk=  0.05556, kpt=  0.4167  0.4167  0.5000 (reduced coord)
+  -2.29622   -1.35296   -1.34498   -1.34497   -0.50527   -0.50227   -0.26201   -0.25101
+  -0.20768   -0.17797   -0.14781   -0.13340   -0.07233    0.02099
+ kpt#  16, nband= 14, wtk=  0.05556, kpt= -0.4167  0.4167  0.5000 (reduced coord)
+  -2.29642   -1.35321   -1.34537   -1.34237   -0.51627   -0.50764   -0.27031   -0.23478
+  -0.20945   -0.17373   -0.13109   -0.09751   -0.09177    0.02425
+ kpt#  17, nband= 14, wtk=  0.05556, kpt= -0.2500  0.4167  0.5000 (reduced coord)
+  -2.29656   -1.35050   -1.34565   -1.34347   -0.52475   -0.51047   -0.25104   -0.22352
+  -0.19840   -0.18421   -0.14349   -0.11223   -0.08825    0.01432
+ kpt#  18, nband= 14, wtk=  0.05556, kpt= -0.0833  0.4167  0.5000 (reduced coord)
+  -2.29651   -1.35187   -1.34554   -1.34267   -0.52163   -0.50954   -0.26102   -0.22889
+  -0.20503   -0.17602   -0.12355   -0.12007   -0.08819    0.01978
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3944E-01  at reduced coord.    0.2500    0.7500    0.0000
+)Next maximum=    9.3940E-01  at reduced coord.    0.2500    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1875    0.0000    0.3704
+)Next minimum=    0.0000E+00  at reduced coord.    0.2188    0.0000    0.3704
+   Integrated=    2.6000E+01
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -3.05893020E-05  sigma(3 2)= -5.68639174E-11
+  sigma(2 2)= -2.96048005E-05  sigma(3 1)= -1.41438272E-10
+  sigma(3 3)= -1.35619887E-06  sigma(2 1)=  7.75422729E-10
+ 
+-Cartesian components of stress tensor (GPa)         [Pressure=  6.0362E-01 GPa]
+- sigma(1 1)= -8.99968185E-01  sigma(3 2)= -1.67299393E-06
+- sigma(2 2)= -8.71003155E-01  sigma(3 1)= -4.16125694E-06
+- sigma(3 3)= -3.99007416E-02  sigma(2 1)=  2.28137205E-05
+ dataset: 18 , wall: 09:18 [minutes] , cpu: 09:12 [minutes] <<< TIME
+ 
+== END DATASET(S) ==============================================================
+================================================================================
+ 
+--- !COMMENT
+src_file: m_outvars.F90
+src_line: 202
+message: |
+    output of OUT.nc has been disabled. Too many datasets
+...
+ 
+  
+ -outvars: echo values of variables after computation  --------
+ 
+--- !COMMENT
+src_file: m_outvars.F90
+src_line: 202
+message: |
+    output of OUT.nc has been disabled. Too many datasets
+...
+ 
+            acell      5.9526373186E+00  5.9526373186E+00  3.7794522658E+01 Bohr
+              amu      9.59400000E+01  3.20660000E+01
+      chksymbreak           0
+             ecut11    1.00000000E+01 Hartree
+             ecut12    1.00000000E+01 Hartree
+             ecut13    1.00000000E+01 Hartree
+             ecut21    1.50000000E+01 Hartree
+             ecut22    1.50000000E+01 Hartree
+             ecut23    1.50000000E+01 Hartree
+             ecut31    2.00000000E+01 Hartree
+             ecut32    2.00000000E+01 Hartree
+             ecut33    2.00000000E+01 Hartree
+             ecut41    2.50000000E+01 Hartree
+             ecut42    2.50000000E+01 Hartree
+             ecut43    2.50000000E+01 Hartree
+             ecut51    3.00000000E+01 Hartree
+             ecut52    3.00000000E+01 Hartree
+             ecut53    3.00000000E+01 Hartree
+             ecut61    3.50000000E+01 Hartree
+             ecut62    3.50000000E+01 Hartree
+             ecut63    3.50000000E+01 Hartree
+           etotal11   -9.1610974241E+01
+           etotal12   -9.1609102454E+01
+           etotal13   -9.1607766170E+01
+           etotal21   -9.2135454570E+01
+           etotal22   -9.2122495712E+01
+           etotal23   -9.2123036596E+01
+           etotal31   -9.2318749972E+01
+           etotal32   -9.2305103515E+01
+           etotal33   -9.2306019249E+01
+           etotal41   -9.2377850452E+01
+           etotal42   -9.2364715005E+01
+           etotal43   -9.2365477640E+01
+           etotal51   -9.2392719812E+01
+           etotal52   -9.2379708481E+01
+           etotal53   -9.2380434690E+01
+           etotal61   -9.2395309102E+01
+           etotal62   -9.2382314826E+01
+           etotal63   -9.2383042652E+01
+            fcart11   -9.1017281314E-08 -4.1578356996E-04 -3.1614508130E-07
+                       3.2076352259E-07  2.0783517360E-04 -1.5780786434E-04
+                      -2.2974624128E-07  2.0794839636E-04  1.5812400942E-04
+            fcart12    1.0449931579E-07 -4.8837282875E-04  1.4292484212E-07
+                      -4.9898489397E-08  2.4420093107E-04  5.2545935483E-06
+                      -5.4600826393E-08  2.4417189768E-04 -5.3975183904E-06
+            fcart13   -2.4176633540E-08  7.2128012895E-06  9.4598088678E-07
+                       1.4034805200E-08 -3.6093937892E-06 -3.1620535007E-05
+                       1.0141828340E-08 -3.6034075003E-06  3.0674554120E-05
+            fcart21    2.8637835962E-08  1.2615805307E-04 -1.8589734556E-07
+                      -1.3244508162E-07 -6.3136413896E-05 -1.4013578178E-04
+                       1.0380724566E-07 -6.3021639170E-05  1.4032167912E-04
+            fcart22   -9.4860623390E-08 -4.2528118207E-04 -1.6605385843E-07
+                      -3.5281143866E-07  2.1264223123E-04 -3.4725293557E-04
+                       4.4767206205E-07  2.1263895084E-04  3.4741898943E-04
+            fcart23    6.6186136241E-08 -1.0925586077E-05 -1.5758457026E-08
+                      -1.2636828625E-08  5.4565883458E-06 -1.5304025790E-04
+                      -5.3549307617E-08  5.4689977312E-06  1.5305601636E-04
+            fcart31    1.2527329719E-07  3.1474242624E-04  3.7721365291E-06
+                       1.1469527308E-08 -1.5703683440E-04 -2.7684354044E-04
+                      -1.3674282450E-07 -1.5770559184E-04  2.7307140391E-04
+            fcart32   -2.5644709939E-07 -4.0779933895E-04 -8.1984297002E-09
+                       2.3812186863E-07  2.0388740014E-04 -1.4861761388E-04
+                       1.8325230770E-08  2.0391193881E-04  1.4862581230E-04
+            fcart33   -1.8070396487E-07 -1.9341601647E-05 -8.6068757371E-07
+                      -1.3878095739E-08  9.6836933430E-06 -2.8369123590E-04
+                       1.9458206061E-07  9.6579083042E-06  2.8455192348E-04
+            fcart41   -6.3733254764E-08  3.3067703318E-04  3.0600479963E-06
+                      -3.3678967572E-07 -1.6492046325E-04 -3.1437301127E-04
+                       4.0052293049E-07 -1.6575656993E-04  3.1131296328E-04
+            fcart42   -3.1955179418E-07 -3.0627131058E-04 -6.0712361414E-08
+                       5.3924383523E-09  1.5314596701E-04 -2.4974221165E-04
+                       3.1415935583E-07  1.5312534357E-04  2.4980292401E-04
+            fcart43    4.9314175959E-08 -1.4723957049E-05 -6.1603604675E-07
+                      -4.6402693466E-08  7.3558907705E-06 -4.7940474256E-04
+                      -2.9114824924E-09  7.3680662790E-06  4.8002077861E-04
+            fcart51   -2.9862013965E-07  1.7716674877E-04  1.2836630062E-05
+                       2.3082430789E-07 -8.8156679762E-05 -3.0394636579E-04
+                       6.7795831761E-08 -8.9010069007E-05  2.9110973573E-04
+            fcart52   -2.3633899194E-07 -3.1283191768E-04 -2.8198388499E-06
+                      -2.2974344904E-08  1.5648171467E-04 -1.8951367861E-04
+                       2.5931333684E-07  1.5635020301E-04  1.9233351746E-04
+            fcart53   -3.2177744935E-07 -1.5323582559E-05  1.1611733829E-06
+                       1.8630726051E-07  7.6497277021E-06 -4.2371879692E-04
+                       1.3547018884E-07  7.6738548569E-06  4.2255762354E-04
+            fcart61   -4.0387827580E-08  2.3940242096E-04  2.9516283851E-06
+                       3.2404534099E-07 -1.1904955256E-04 -3.9174210167E-04
+                      -2.8365751341E-07 -1.2035286840E-04  3.8879047329E-04
+            fcart62   -7.5528263212E-08 -4.2074261983E-04 -1.5873103679E-06
+                       1.1016371935E-07  2.1045090005E-04 -4.3001672949E-04
+                      -3.4635456139E-08  2.1029171978E-04  4.3160403986E-04
+            fcart63   -3.1067656690E-07 -1.7524855030E-05  1.7796588270E-07
+                       1.2563176782E-07  8.7500101492E-06 -2.6113732487E-04
+                       1.8504479908E-07  8.7748448810E-06  2.6095935899E-04
+-          fftalg         512
+           ionmov           2
+              ixc          11
+           jdtset       11   12   13   21   22   23   31   32   33   41
+                        42   43   51   52   53   61   62   63
+              kpt11    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt12    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt13    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+              kpt21    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt22    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt23    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+              kpt31    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt32    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt33    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+              kpt41    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt42    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt43    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+              kpt51    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt52    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt53    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+              kpt61    2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+              kpt62    1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -3.75000000E-01  1.25000000E-01  5.00000000E-01
+                      -1.25000000E-01  1.25000000E-01  5.00000000E-01
+                       1.25000000E-01  3.75000000E-01  5.00000000E-01
+                       3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -3.75000000E-01  3.75000000E-01  5.00000000E-01
+                      -1.25000000E-01  3.75000000E-01  5.00000000E-01
+              kpt63    8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       2.50000000E-01  8.33333333E-02  5.00000000E-01
+                       4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -4.16666667E-01  8.33333333E-02  5.00000000E-01
+                      -2.50000000E-01  8.33333333E-02  5.00000000E-01
+                      -8.33333333E-02  8.33333333E-02  5.00000000E-01
+                       8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       2.50000000E-01  2.50000000E-01  5.00000000E-01
+                       4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -4.16666667E-01  2.50000000E-01  5.00000000E-01
+                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
+                      -8.33333333E-02  2.50000000E-01  5.00000000E-01
+                       8.33333333E-02  4.16666667E-01  5.00000000E-01
+                       2.50000000E-01  4.16666667E-01  5.00000000E-01
+                       4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -4.16666667E-01  4.16666667E-01  5.00000000E-01
+                      -2.50000000E-01  4.16666667E-01  5.00000000E-01
+                      -8.33333333E-02  4.16666667E-01  5.00000000E-01
+         kptrlatt11      2    0    0      0    2    0      0    0    1
+         kptrlatt12      4    0    0      0    4    0      0    0    1
+         kptrlatt13      6    0    0      0    6    0      0    0    1
+         kptrlatt21      2    0    0      0    2    0      0    0    1
+         kptrlatt22      4    0    0      0    4    0      0    0    1
+         kptrlatt23      6    0    0      0    6    0      0    0    1
+         kptrlatt31      2    0    0      0    2    0      0    0    1
+         kptrlatt32      4    0    0      0    4    0      0    0    1
+         kptrlatt33      6    0    0      0    6    0      0    0    1
+         kptrlatt41      2    0    0      0    2    0      0    0    1
+         kptrlatt42      4    0    0      0    4    0      0    0    1
+         kptrlatt43      6    0    0      0    6    0      0    0    1
+         kptrlatt51      2    0    0      0    2    0      0    0    1
+         kptrlatt52      4    0    0      0    4    0      0    0    1
+         kptrlatt53      6    0    0      0    6    0      0    0    1
+         kptrlatt61      2    0    0      0    2    0      0    0    1
+         kptrlatt62      4    0    0      0    4    0      0    0    1
+         kptrlatt63      6    0    0      0    6    0      0    0    1
+          kptrlen11    1.19052746E+01
+          kptrlen12    2.38105493E+01
+          kptrlen13    3.57158239E+01
+          kptrlen21    1.19052746E+01
+          kptrlen22    2.38105493E+01
+          kptrlen23    3.57158239E+01
+          kptrlen31    1.19052746E+01
+          kptrlen32    2.38105493E+01
+          kptrlen33    3.57158239E+01
+          kptrlen41    1.19052746E+01
+          kptrlen42    2.38105493E+01
+          kptrlen43    3.57158239E+01
+          kptrlen51    1.19052746E+01
+          kptrlen52    2.38105493E+01
+          kptrlen53    3.57158239E+01
+          kptrlen61    1.19052746E+01
+          kptrlen62    2.38105493E+01
+          kptrlen63    3.57158239E+01
+P           mkmem11         2
+P           mkmem12         8
+P           mkmem13        18
+P           mkmem21         2
+P           mkmem22         8
+P           mkmem23        18
+P           mkmem31         2
+P           mkmem32         8
+P           mkmem33        18
+P           mkmem41         2
+P           mkmem42         8
+P           mkmem43        18
+P           mkmem51         2
+P           mkmem52         8
+P           mkmem53        18
+P           mkmem61         2
+P           mkmem62         8
+P           mkmem63        18
+            natom           3
+            nband11        14
+            nband12        14
+            nband13        14
+            nband21        14
+            nband22        14
+            nband23        14
+            nband31        14
+            nband32        14
+            nband33        14
+            nband41        14
+            nband42        14
+            nband43        14
+            nband51        14
+            nband52        14
+            nband53        14
+            nband61        14
+            nband62        14
+            nband63        14
+           ndtset          18
+            ngfft11        18      18     108
+            ngfft12        18      18     108
+            ngfft13        18      18     108
+            ngfft21        24      24     135
+            ngfft22        24      24     135
+            ngfft23        24      24     135
+            ngfft31        24      24     160
+            ngfft32        24      24     160
+            ngfft33        24      24     160
+            ngfft41        30      30     180
+            ngfft42        30      30     180
+            ngfft43        30      30     180
+            ngfft51        30      30     192
+            ngfft52        30      30     192
+            ngfft53        30      30     192
+            ngfft61        32      32     216
+            ngfft62        32      32     216
+            ngfft63        32      32     216
+             nkpt11         2
+             nkpt12         8
+             nkpt13        18
+             nkpt21         2
+             nkpt22         8
+             nkpt23        18
+             nkpt31         2
+             nkpt32         8
+             nkpt33        18
+             nkpt41         2
+             nkpt42         8
+             nkpt43        18
+             nkpt51         2
+             nkpt52         8
+             nkpt53        18
+             nkpt61         2
+             nkpt62         8
+             nkpt63        18
+            nstep          20
+             nsym           1
+            ntime          10
+           ntypat           2
+              occ11    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ12    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ13    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ21    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ22    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ23    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ31    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ32    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ33    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ41    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ42    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ43    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ51    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ52    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ53    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ61    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ62    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+              occ63    2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000
+        optforces           1
+            rprim      5.0000000000E-01 -8.6602540378E-01  0.0000000000E+00
+                       5.0000000000E-01  8.6602540378E-01  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+           shiftk      5.00000000E-01  5.00000000E-01  5.00000000E-01
+          spgroup           1
+           strten11    1.0616332189E-03  9.6661169264E-04  1.0311789925E-03
+                      -3.1258567902E-10  1.5048519358E-09 -6.6826519829E-11
+           strten12    1.0042134769E-03  9.9165711632E-04  1.0376720302E-03
+                       8.0189325281E-11 -1.6423494546E-11  6.7273855815E-11
+           strten13    9.9797983187E-04  1.0046566861E-03  1.0374879588E-03
+                      -1.5008730371E-11 -2.7272405289E-11  5.0949946008E-10
+           strten21    5.1678846763E-04  4.0519561899E-04  4.8863510825E-04
+                      -2.9859224561E-10  1.1533349263E-10  2.9912711130E-11
+           strten22    4.6346919747E-04  4.5762296284E-04  4.8868912380E-04
+                       8.6160317217E-12 -2.2229639987E-09  9.2699592649E-11
+           strten23    4.6189144323E-04  4.6257923305E-04  4.9163829966E-04
+                      -3.7629538727E-11  1.4296784398E-10  5.4647961608E-11
+           strten31    2.5525342570E-04  1.4051233702E-04  2.3370351355E-04
+                       2.0081832533E-09 -3.4436540461E-10  1.8779269601E-10
+           strten32    2.0616800949E-04  1.9875089749E-04  2.3259379074E-04
+                      -6.2398320216E-11  7.3323803590E-10 -3.7674176912E-10
+           strten33    2.0267685198E-04  2.0246908304E-04  2.3197402751E-04
+                       5.5041962138E-11 -5.7339244045E-10 -1.7356184571E-11
+           strten41    9.8063337481E-05 -4.6230573697E-06  7.9778693593E-05
+                       2.1343465147E-09  1.5152726079E-10 -8.2602396974E-12
+           strten42    5.2822485623E-05  4.6793429991E-05  8.3433614699E-05
+                       5.3140168291E-11 -7.6057916958E-10 -4.9895280938E-10
+           strten43    4.9567728743E-05  5.0319395444E-05  8.3314506863E-05
+                      -2.5749236855E-11  1.1238384542E-10 -1.9306199803E-10
+           strten51    3.5608135226E-05 -6.7594632911E-05  1.8051017369E-05
+                       2.3063159222E-09  6.2315632198E-10 -1.5673381812E-10
+           strten52   -1.0065848318E-05 -1.5657059694E-05  2.0398929264E-05
+                       3.4307861284E-10 -4.3357031100E-10 -2.8556864522E-11
+           strten53   -1.3162712278E-05 -1.2187712754E-05  2.0558173891E-05
+                      -7.5549652326E-11  4.7477241500E-11 -1.0196572397E-09
+           strten61    1.8258021685E-05 -8.5325245853E-05 -2.4732381607E-07
+                       3.3605753821E-09 -4.6977337360E-10 -1.6189655039E-10
+           strten62   -2.8072651816E-05 -3.3693564722E-05 -2.7245663505E-07
+                       4.0917647929E-10  4.5329576326E-10 -1.5857253962E-10
+           strten63   -3.0589302026E-05 -2.9604800498E-05 -1.3561988689E-06
+                      -5.6863917437E-11 -1.4143827226E-10  7.7542272899E-10
+           toldff      5.00000000E-05
+           tolmxf      5.00000000E-04
+            typat      1  2  2
+              wtk11      0.50000    0.50000
+              wtk12      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk13      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+              wtk21      0.50000    0.50000
+              wtk22      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk23      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+              wtk31      0.50000    0.50000
+              wtk32      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk33      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+              wtk41      0.50000    0.50000
+              wtk42      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk43      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+              wtk51      0.50000    0.50000
+              wtk52      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk53      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+              wtk61      0.50000    0.50000
+              wtk62      0.12500    0.12500    0.12500    0.12500    0.12500    0.12500
+                         0.12500    0.12500
+              wtk63      0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+                         0.05556    0.05556    0.05556    0.05556    0.05556    0.05556
+           xangst11    1.5750001830E+00  8.7063584679E-01  3.4108538413E-07
+                       1.5749982456E+00 -8.8998096401E-01 -1.5788507251E+00
+                       1.5750015713E+00 -8.8998155674E-01  1.5788503840E+00
+           xangst12    1.5749998634E+00  9.1223459440E-01 -1.4173996360E-07
+                       1.5750000989E+00 -9.1078072221E-01 -1.5933594966E+00
+                       1.5750000377E+00 -9.1078054616E-01  1.5933596383E+00
+           xangst13    1.5750000458E+00  9.0937680078E-01 -1.0352660593E-06
+                       1.5750000045E+00 -9.0935171762E-01 -1.5919045626E+00
+                       1.5749999497E+00 -9.0935175713E-01  1.5919055978E+00
+           xangst21    1.5749998905E+00  8.6840350865E-01  2.0003629369E-07
+                       1.5749999100E+00 -8.8886480104E-01 -1.5647643977E+00
+                       1.5750001995E+00 -8.8886538157E-01  1.5647641976E+00
+           xangst22    1.5750000453E+00  9.1156224499E-01  1.7395840080E-07
+                       1.5750023143E+00 -9.1044446661E-01 -1.5764020375E+00
+                       1.5749976403E+00 -9.1044445235E-01  1.5764018635E+00
+           xangst23    1.5749998462E+00  9.0944128580E-01  3.1637716670E-08
+                       1.5749999289E+00 -9.0938396592E-01 -1.5765850799E+00
+                       1.5750002249E+00 -9.0938399385E-01  1.5765850483E+00
+           xangst31    1.5749997502E+00  8.6834484568E-01 -3.8060545452E-06
+                       1.5750004963E+00 -8.8883753884E-01 -1.5627488775E+00
+                       1.5749997535E+00 -8.8883398081E-01  1.5627526836E+00
+           xangst32    1.5750000235E+00  9.1135189523E-01  9.8036124022E-09
+                       1.5749992078E+00 -9.1033921561E-01 -1.5757383340E+00
+                       1.5750007687E+00 -9.1033935359E-01  1.5757383241E+00
+           xangst33    1.5749999617E+00  9.0945309616E-01  8.1385077818E-07
+                       1.5750006317E+00 -9.0938994209E-01 -1.5746197422E+00
+                       1.5749994066E+00 -9.0938982804E-01  1.5746189283E+00
+           xangst41    1.5750000767E+00  8.6796170163E-01 -3.5258336400E-06
+                       1.5749997702E+00 -8.8864613851E-01 -1.5619905262E+00
+                       1.5750001531E+00 -8.8864223709E-01  1.5619940520E+00
+           xangst42    1.5750002721E+00  9.1124141923E-01  6.6571100459E-08
+                       1.5750006910E+00 -9.1028410402E-01 -1.5753062803E+00
+                       1.5749990369E+00 -9.1028398918E-01  1.5753062137E+00
+           xangst43    1.5749999024E+00  9.0945382874E-01  8.2279018856E-07
+                       1.5749999274E+00 -9.0939021524E-01 -1.5740753206E+00
+                       1.5750001702E+00 -9.0939028747E-01  1.5740744978E+00
+           xangst51    1.5750005343E+00  8.6841516605E-01 -1.4580939088E-05
+                       1.5749990286E+00 -8.8887207721E-01 -1.5619492293E+00
+                       1.5750004371E+00 -8.8886976281E-01  1.5619638102E+00
+           xangst52    1.5750002088E+00  9.1126365491E-01  3.0400208163E-06
+                       1.5750003330E+00 -9.1029549766E-01 -1.5752862198E+00
+                       1.5749994583E+00 -9.1029483121E-01  1.5752831798E+00
+           xangst53    1.5750000759E+00  9.0945237298E-01 -1.4091166102E-06
+                       1.5749998993E+00 -9.0938947862E-01 -1.5741114520E+00
+                       1.5750000249E+00 -9.0938956833E-01  1.5741128611E+00
+           xangst61    1.5749996572E+00  8.6836671210E-01 -3.4735343158E-06
+                       1.5750009422E+00 -8.8884990971E-01 -1.5616354601E+00
+                       1.5749994006E+00 -8.8884347636E-01  1.5616389336E+00
+           xangst62    1.5750001412E+00  9.1144104832E-01  1.7416252511E-06
+                       1.5749994368E+00 -9.1038428794E-01 -1.5742496429E+00
+                       1.5750004220E+00 -9.1038343435E-01  1.5742479012E+00
+           xangst63    1.5749996314E+00  9.0945756376E-01 -1.7312963894E-07
+                       1.5750003177E+00 -9.0939204786E-01 -1.5735695576E+00
+                       1.5750000509E+00 -9.0939218987E-01  1.5735697307E+00
+            xcart11    2.9763190052E+00  1.6452633119E+00  6.4455796394E-07
+                       2.9763153440E+00 -1.6818202855E+00 -2.9835954751E+00
+                       2.9763216287E+00 -1.6818214056E+00  2.9835948305E+00
+            xcart12    2.9763184012E+00  1.7238735524E+00 -2.6784971328E-07
+                       2.9763188462E+00 -1.7211261321E+00 -3.0110130797E+00
+                       2.9763187305E+00 -1.7211257994E+00  3.0110133476E+00
+            xcart13    2.9763187459E+00  1.7184731051E+00 -1.9563693267E-06
+                       2.9763186678E+00 -1.7184257048E+00 -3.0082636529E+00
+                       2.9763185642E+00 -1.7184257794E+00  3.0082656093E+00
+            xcart21    2.9763184523E+00  1.6410448042E+00  3.7801381171E-07
+                       2.9763184893E+00 -1.6797110431E+00 -2.9569761741E+00
+                       2.9763190363E+00 -1.6797121402E+00  2.9569757961E+00
+            xcart22    2.9763187450E+00  1.7226029961E+00  3.2873373602E-07
+                       2.9763230328E+00 -1.7204907011E+00 -2.9789681261E+00
+                       2.9763142002E+00 -1.7204906741E+00  2.9789677974E+00
+            xcart23    2.9763183686E+00  1.7185949641E+00  5.9786619976E-08
+                       2.9763185250E+00 -1.7184866452E+00 -2.9793140262E+00
+                       2.9763190843E+00 -1.7184866980E+00  2.9793139664E+00
+            xcart31    2.9763181872E+00  1.6409339472E+00 -7.1924007372E-06
+                       2.9763195971E+00 -1.6796595250E+00 -2.9531673930E+00
+                       2.9763181935E+00 -1.6796528013E+00  2.9531745854E+00
+            xcart32    2.9763187037E+00  1.7222054927E+00  1.8526142553E-08
+                       2.9763171623E+00 -1.7202918055E+00 -2.9777139083E+00
+                       2.9763201119E+00 -1.7202920663E+00  2.9777138897E+00
+            xcart33    2.9763185870E+00  1.7186172824E+00  1.5379550838E-06
+                       2.9763198530E+00 -1.7184979385E+00 -2.9756000761E+00
+                       2.9763175379E+00 -1.7184977230E+00  2.9755985382E+00
+            xcart41    2.9763188043E+00  1.6402099099E+00 -6.6628599697E-06
+                       2.9763182251E+00 -1.6792978308E+00 -2.9517343166E+00
+                       2.9763189485E+00 -1.6792904582E+00  2.9517409795E+00
+            xcart42    2.9763191735E+00  1.7219967233E+00  1.2580114823E-07
+                       2.9763199651E+00 -1.7201876597E+00 -2.9768974452E+00
+                       2.9763168393E+00 -1.7201874427E+00  2.9768973194E+00
+            xcart43    2.9763184749E+00  1.7186186668E+00  1.5548481212E-06
+                       2.9763185221E+00 -1.7184984547E+00 -2.9745712684E+00
+                       2.9763189809E+00 -1.7184985912E+00  2.9745697135E+00
+            xcart51    2.9763196689E+00  1.6410668335E+00 -2.7553981637E-05
+                       2.9763168236E+00 -1.6797247931E+00 -2.9516562768E+00
+                       2.9763194854E+00 -1.6797204195E+00  2.9516838308E+00
+            xcart52    2.9763190538E+00  1.7220387426E+00  5.7448067811E-06
+                       2.9763192885E+00 -1.7202091906E+00 -2.9768595363E+00
+                       2.9763176356E+00 -1.7202079312E+00  2.9768537915E+00
+            xcart53    2.9763188026E+00  1.7186159158E+00 -2.6628444826E-06
+                       2.9763184690E+00 -1.7184970627E+00 -2.9746395470E+00
+                       2.9763187063E+00 -1.7184972322E+00  2.9746422098E+00
+            xcart61    2.9763180115E+00  1.6409752688E+00 -6.5640285700E-06
+                       2.9763204398E+00 -1.6796829026E+00 -2.9510633390E+00
+                       2.9763175266E+00 -1.6796707453E+00  2.9510699030E+00
+            xcart62    2.9763189262E+00  1.7223739676E+00  3.2911947508E-06
+                       2.9763175950E+00 -1.7203769799E+00 -2.9749006898E+00
+                       2.9763194567E+00 -1.7203753668E+00  2.9748973986E+00
+            xcart63    2.9763179628E+00  1.7186257250E+00 -3.2716760308E-07
+                       2.9763192596E+00 -1.7185019179E+00 -2.9736155149E+00
+                       2.9763187556E+00 -1.7185021862E+00  2.9736158421E+00
+             xred11    3.4042487064E-01  6.5957524557E-01  1.7054269207E-08
+                       6.6312031581E-01  3.3687857032E-01 -7.8942536254E-02
+                       6.6312148022E-01  3.3687951745E-01  7.8942519199E-02
+             xred12    3.3280030945E-01  6.6719960383E-01 -7.0869981798E-09
+                       6.6693320446E-01  3.3306685834E-01 -7.9667974828E-02
+                       6.6693315275E-01  3.3306687116E-01  7.9667981915E-02
+             xred13    3.3332416036E-01  6.6667586875E-01 -5.1763302963E-08
+                       6.6667125824E-01  3.3332874462E-01 -7.9595228128E-02
+                       6.6667124807E-01  3.3332871996E-01  7.9595279891E-02
+             xred21    3.4083393365E-01  6.5916599681E-01  1.0001814684E-08
+                       6.6291626736E-01  3.3708367552E-01 -7.8238219884E-02
+                       6.6291646566E-01  3.3708366101E-01  7.8238209882E-02
+             xred22    3.3292359930E-01  6.6707642948E-01  8.6979200399E-09
+                       6.6687227689E-01  3.3312919252E-01 -7.8820101873E-02
+                       6.6687079047E-01  3.3312771133E-01  7.8820093175E-02
+             xred23    3.3331227777E-01  6.6668762455E-01  1.5818858335E-09
+                       6.6667714491E-01  3.3332280998E-01 -7.8829253995E-02
+                       6.6667724398E-01  3.3332289881E-01  7.8829252413E-02
+             xred31    3.4084464121E-01  6.5915520019E-01 -1.9030272726E-07
+                       6.6291145670E-01  3.3708885840E-01 -7.8137443877E-02
+                       6.6291056877E-01  3.3708927474E-01  7.8137634180E-02
+             xred32    3.3296214649E-01  6.6703786842E-01  4.9018062011E-10
+                       6.6685199969E-01  3.3314749735E-01 -7.8786916698E-02
+                       6.6685252049E-01  3.3314796756E-01  7.8786916207E-02
+             xred33    3.3331014980E-01  6.6668982591E-01  4.0692538909E-08
+                       6.6667846335E-01  3.3332193772E-01 -7.8730987108E-02
+                       6.6667805352E-01  3.3332156970E-01  7.8730946415E-02
+             xred41    3.4091496973E-01  6.5908507899E-01 -1.7629168200E-07
+                       6.6287614524E-01  3.3712370886E-01 -7.8099526308E-02
+                       6.6287555170E-01  3.3712454548E-01  7.8099702600E-02
+             xred42    3.3298247409E-01  6.6701769866E-01  3.3285550229E-09
+                       6.6684236937E-01  3.3315806937E-01 -7.8765314015E-02
+                       6.6684182320E-01  3.3315756530E-01  7.8765310686E-02
+             xred43    3.3330999669E-01  6.6668994135E-01  4.1139509428E-08
+                       6.6667828984E-01  3.3332166408E-01 -7.8703766028E-02
+                       6.6667838014E-01  3.3332172791E-01  7.8703724888E-02
+             xred51    3.4083200139E-01  6.5916833783E-01 -7.2904695442E-07
+                       6.6291732115E-01  3.3708206207E-01 -7.8097461465E-02
+                       6.6291734412E-01  3.3708293343E-01  7.8098190512E-02
+             xred52    3.3297837850E-01  6.6702175404E-01  1.5200104082E-07
+                       6.6684434400E-01  3.3315586741E-01 -7.8764310990E-02
+                       6.6684394417E-01  3.3315571188E-01  7.8764158989E-02
+             xred53    3.3331031857E-01  6.6668972959E-01 -7.0455830511E-08
+                       6.6667814589E-01  3.3332179016E-01 -7.8705572601E-02
+                       6.6667820220E-01  3.3332181358E-01  7.8705643057E-02
+             xred61    3.4084060388E-01  6.5915917848E-01 -1.7367671579E-07
+                       6.6291386566E-01  3.3708673255E-01 -7.8081773004E-02
+                       6.6291219712E-01  3.3708742230E-01  7.8081946681E-02
+             xred62    3.3294584338E-01  6.6705424630E-01  8.7081262557E-08
+                       6.6686033349E-01  3.3313930891E-01 -7.8712482143E-02
+                       6.6686048980E-01  3.3313977812E-01  7.8712395061E-02
+             xred63    3.3330922608E-01  6.6669053989E-01 -8.6564819471E-09
+                       6.6667874961E-01  3.3332145207E-01 -7.8678477881E-02
+                       6.6667869097E-01  3.3332134137E-01  7.8678486537E-02
+            znucl       42.00000   16.00000
+ 
+================================================================================
+  
+ Proc.   0 individual time (sec): cpu=       3594.8  wall=       3652.8
+ 
+ Calculation completed.
+.Delivered  58 WARNINGs and  60 COMMENTs to log file.
+
+--- !FinalSummary
+program: abinit
+version: 9.10.3
+start_datetime: Wed May 07 09:16:13 2025
+end_datetime: Wed May 07 10:17:06 2025
+overall_cpu_time:        3594.8
+overall_wall_time:        3652.8
+exit_requested_by_user: no 
+timelimit: 0
+pseudos: 
+    Mo  : 228091cb5782e08cb8d68936b3c7e57b
+    S   : ee4b2e2802f5df21cf2ecc26b1029f69
+usepaw: 0
+mpi_procs: 1
+omp_threads: 1
+num_warnings: 58
+num_comments: 60
+...
