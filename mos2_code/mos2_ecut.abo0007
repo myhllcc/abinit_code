@@ -1,0 +1,37 @@
+
+.Version 9.10.3 of ABINIT 
+.(MPI version, prepared for a x86_64_linux_intel2021.6 computer) 
+
+.Copyright (C) 1998-2022 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read https://docs.abinit.org/theory/acknowledgments for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see https://www.abinit.org .
+
+.Starting date : Wed  7 May 2025.
+- ( at 06h33 )
+  
+- input  file    -> mos2_ecut.abi
+- output file    -> mos2_ecut.abo
+- root for input  files -> mos2_ecuti
+- root for output files -> mos2_ecuto
+ 
+ 
+--- !ERROR
+src_file: m_dtset.F90
+src_line: 1278
+mpi_rank: 0
+message: |
+    Initialization of occ variables with occopt: 1
+    There are not enough bands to get charge balance right with nelect:  2.6000E+01
+    Action: modify input file 
+    (check the pseudopotential charges, the variable cellcharge, the variable jellslab,
+    and the declared number of bands, nband)
+...
+ 
