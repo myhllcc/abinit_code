@@ -12,13 +12,12 @@ natom?1 3
 ionmov?1 2
 ntime?1 10
 tolmxf?1 5.0d-4 #stopping when residual forces
-
-xred
+xred?1
   1/3  2/3  0.0 
   2/3  1/3  -0.0919442350
   2/3  1/3  0.0919442350
-
-  nband?1 1
+toldff?1 5.0d-5
+nband?1 1
 
 rprim
  0.5 -0.86602540378 0
