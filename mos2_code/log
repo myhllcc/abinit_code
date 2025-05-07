@@ -1,6 +1,6 @@
   ABINIT 9.10.3
   
--instrng: 54 lines of input have been read from file mos2.abi
+-instrng: 59 lines of input have been read from file mos2.abi
  
  
 --- !COMMENT
@@ -15,7 +15,7 @@ message: |
 src_file: m_dtfil.F90
 src_line: 1465
 message: |
-    Renaming old: mos2.abo to: mos2.abo0005
+    Renaming old: mos2.abo to: mos2.abo0006
 ...
  
 
@@ -35,7 +35,7 @@ message: |
  For more information, see https://www.abinit.org .
 
 .Starting date : Wed  7 May 2025.
-- ( at 08h47 )
+- ( at 10h34 )
   
  
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -141,7 +141,7 @@ message: |
 - root for output files -> mos2o
  
  Netcdf library supports MPI-IO
--instrng: 54 lines of input have been read from file mos2.abi
+-instrng: 59 lines of input have been read from file mos2.abi
  
  For atom type 1, psp file is ./persudo/Mo.psp8
  For atom type 2, psp file is ./persudo/S.psp8
@@ -300,7 +300,7 @@ message: |
 memory: analysis of memory needs
 ================================================================================
  Values of the parameters that define the memory need for DATASET  1.
-     intxc =       0    ionmov =       0      iscf =       7    lmnmax =       6
+     intxc =       0    ionmov =       2      iscf =       7    lmnmax =       6
      lnmax =       6     mgfft =     192  mpssoang =       3    mqgrid =    9319
      natom =       3  nloc_mem =       1    nspden =       1   nspinor =       1
     nsppol =       1      nsym =       1    n1xccc =    2501    ntypat =       2
@@ -325,7 +325,7 @@ _ WF disk file :     19.502 Mbytes ; DEN or POT disk file :      1.320 Mbytes.
 memory: analysis of memory needs
 ================================================================================
  Values of the parameters that define the memory need for DATASET  2.
-     intxc =       0    ionmov =       0      iscf =      -2    lmnmax =       6
+     intxc =       0    ionmov =       2      iscf =      -2    lmnmax =       6
      lnmax =       6     mgfft =     192  mpssoang =       3    mqgrid =    9319
      natom =       3  nloc_mem =       1    nspden =       1   nspinor =       1
     nsppol =       1      nsym =       1    n1xccc =    2501    ntypat =       2
@@ -333,14 +333,14 @@ memory: analysis of memory needs
 -    mband =           8        mffmem =           1         mkmem =          68
        mpw =        9191          nfft =      172800          nkpt =          68
 ================================================================================
-P This job should need less than                     116.944 Mbytes of memory.
+P This job should need less than                     116.945 Mbytes of memory.
   Rough estimation (10% accuracy) of disk space for files :
 _ WF disk file :     76.294 Mbytes ; DEN or POT disk file :      1.320 Mbytes.
 ================================================================================
  
  Biggest array : cg(disk), with     76.2945 MBytes.
  memana : allocated an array of     76.294 Mbytes, for testing purposes.
- memana: allocated     116.944Mbytes, for testing purposes. 
+ memana: allocated     116.945Mbytes, for testing purposes. 
  The job will continue.
 --------------------------------------------------------------------------------
 ------------- Echo of variables that govern the present computation ------------
@@ -365,6 +365,7 @@ _ WF disk file :     76.294 Mbytes ; DEN or POT disk file :      1.320 Mbytes.
 -          fftalg         512
            getden1          0
            getden2         -1
+           ionmov           2
              iscf1          7
              iscf2         -2
            istwfk1       4    0    5    0    0    0    0    8    0    9
@@ -457,10 +458,12 @@ P           mkmem2         68
              nkpt2         68
             nstep          20
              nsym           1
+            ntime          10
            ntypat           2
               occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
                        2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
                        2.000000  0.000000
+        optforces           1
             rprim      5.0000000000E-01 -8.6602540378E-01  0.0000000000E+00
                        5.0000000000E-01  8.6602540378E-01  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
@@ -469,6 +472,7 @@ P           mkmem2         68
           spgroup           1
            toldfe1     1.00000000E-07 Hartree
            toldfe2     0.00000000E+00 Hartree
+           tolmxf      5.00000000E-04
            tolwfr1     0.00000000E+00
            tolwfr2     1.00000000E-12
             typat      1  2  2
@@ -529,7 +533,7 @@ P           mkmem2         68
   xmpio_bsize_frm ............            4
   xmpi_address_kind ..........            8
   xmpi_offset_kind ...........            8
-  MPI_WTICK ..................   4.009476504139918E-010
+  MPI_WTICK ..................   4.009470857315253E-010
  
 ================================================================================
 == DATASET  1 ==================================================================
@@ -635,6 +639,23 @@ _setup2: Arith. and geom. avg. npw (full set) are    9108.625    9108.605
  
 ================================================================================
  
+=== [ionmov= 2] Broyden-Fletcher-Goldfard-Shanno method (forces)            
+================================================================================
+ 
+--- Iteration: ( 1/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
  getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
          ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
  
@@ -666,12 +687,12 @@ message: |
    Integrated=    2.6000E+01
  
  1/G**2 cut-off applied in the following step : cutoff-mode = CRYSTAL
- ETOT  1  -91.461366159032    -9.146E+01 7.981E-02 1.048E+04
+ ETOT  1  -91.461366159032    -9.146E+01 7.981E-02 1.048E+04 7.989E-02 7.989E-02
  scprqt: <Vxc>= -1.8090494E-01 hartree
  
  Simple mixing update:
   residual square of the potential:    632.448196603097
-{SCF_istep: 1 , Vnl|psi>: 1400 , wall_time: '  5.77 [s] '} <<< TIME
+{SCF_istep: 1 , Vnl|psi>: 1530 , wall_time: '  7.81 [s] '} <<< TIME
  
  ITER STEP NUMBER     2
  Max number of non-self-consistent loops: 2
@@ -679,223 +700,223 @@ message: |
 )     Maximum=    1.2210E+00  at reduced coord.    0.2333    0.5000    0.0000
 )     Minimum=    4.9042E-07  at reduced coord.    0.6000    0.5333    0.4583
    Integrated=    2.6000E+01
- ETOT  2  -86.493903933820     4.967E+00 6.066E-02 9.386E+04
+ ETOT  2  -86.493903933820     4.967E+00 6.066E-02 9.386E+04 1.085E+00 1.005E+00
  scprqt: <Vxc>= -1.4739363E-01 hartree
  
  Pulay update with  1 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.255      0.745
-{SCF_istep: 2 , Vnl|psi>: 1397 , wall_time: '  3.47 [s] '} <<< TIME
+{SCF_istep: 2 , Vnl|psi>: 1527 , wall_time: '  3.90 [s] '} <<< TIME
  
  ITER STEP NUMBER     3
  Total charge density [el/Bohr^3]
 )     Maximum=    9.4775E-01  at reduced coord.    0.2333    0.7333    0.0000
 )     Minimum=    2.8416E-07  at reduced coord.    0.0667    0.9000    0.4271
    Integrated=    2.6000E+01
- ETOT  3  -92.239316600703    -5.745E+00 8.989E-02 2.060E+03
+ ETOT  3  -92.239316600703    -5.745E+00 8.989E-02 2.060E+03 8.473E-01 1.574E-01
  scprqt: <Vxc>= -1.5591758E-01 hartree
  
  Pulay update with  2 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.285      0.161      0.555
-{SCF_istep: 3 , Vnl|psi>: 670 , wall_time: '  1.73 [s] '} <<< TIME
+{SCF_istep: 3 , Vnl|psi>: 800 , wall_time: '  2.10 [s] '} <<< TIME
  
  ITER STEP NUMBER     4
  Total charge density [el/Bohr^3]
 )     Maximum=    9.3427E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    2.4619E-08  at reduced coord.    0.5333    0.0667    0.4271
    Integrated=    2.6000E+01
- ETOT  4  -92.310691320250    -7.137E-02 1.642E-02 1.039E+03
+ ETOT  4  -92.310691320250    -7.137E-02 1.642E-02 1.039E+03 2.967E-02 1.278E-01
  scprqt: <Vxc>= -1.5117685E-01 hartree
  
  Pulay update with  3 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.363      0.117      0.107      0.412
-{SCF_istep: 4 , Vnl|psi>: 700 , wall_time: '  1.82 [s] '} <<< TIME
+{SCF_istep: 4 , Vnl|psi>: 830 , wall_time: '  2.12 [s] '} <<< TIME
  
  ITER STEP NUMBER     5
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2953E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.7333    0.0000    0.3802
    Integrated=    2.6000E+01
- ETOT  5  -92.326348633640    -1.566E-02 3.723E-04 6.349E+02
+ ETOT  5  -92.326348633640    -1.566E-02 3.723E-04 6.349E+02 1.504E-02 1.127E-01
  scprqt: <Vxc>= -1.4993244E-01 hartree
  
  Pulay update with  4 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.651     -0.272E-01  0.981E-02  0.728E-01  0.294
-{SCF_istep: 5 , Vnl|psi>: 687 , wall_time: '  1.79 [s] '} <<< TIME
+{SCF_istep: 5 , Vnl|psi>: 817 , wall_time: '  2.22 [s] '} <<< TIME
  
  ITER STEP NUMBER     6
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2920E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3750
    Integrated=    2.6000E+01
- ETOT  6  -92.331955942841    -5.607E-03 2.482E-04 4.570E+02
+ ETOT  6  -92.331955942841    -5.607E-03 2.482E-04 4.570E+02 9.864E-03 1.029E-01
  scprqt: <Vxc>= -1.4979119E-01 hartree
  
  Pulay update with  5 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=   1.27     -0.828E-01 -0.261     -0.941E-01  0.297E-01
-{SCF_istep: 6 , Vnl|psi>: 700 , wall_time: '  1.82 [s] '} <<< TIME
+{SCF_istep: 6 , Vnl|psi>: 830 , wall_time: '  2.24 [s] '} <<< TIME
  
  ITER STEP NUMBER     7
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2706E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.2667    0.0333    0.3750
    Integrated=    2.6000E+01
- ETOT  7  -92.338907844790    -6.952E-03 1.199E-04 2.282E+02
+ ETOT  7  -92.338907844790    -6.952E-03 1.199E-04 2.282E+02 1.446E-02 8.841E-02
  scprqt: <Vxc>= -1.4992995E-01 hartree
  
  Pulay update with  6 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.761      0.594     -0.251E-01 -0.254     -0.132
-{SCF_istep: 7 , Vnl|psi>: 700 , wall_time: '  1.83 [s] '} <<< TIME
+{SCF_istep: 7 , Vnl|psi>: 830 , wall_time: '  2.20 [s] '} <<< TIME
  
  ITER STEP NUMBER     8
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2514E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3750
    Integrated=    2.6000E+01
- ETOT  8  -92.341969679254    -3.062E-03 2.620E-04 1.141E+02
+ ETOT  8  -92.341969679254    -3.062E-03 2.620E-04 1.141E+02 9.482E-03 7.893E-02
  scprqt: <Vxc>= -1.5008313E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.512      0.318      0.373      0.774E-01 -0.189
-{SCF_istep: 8 , Vnl|psi>: 700 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 8 , Vnl|psi>: 830 , wall_time: '  2.13 [s] '} <<< TIME
  
  ITER STEP NUMBER     9
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2432E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3750
    Integrated=    2.6000E+01
- ETOT  9  -92.342555872414    -5.862E-04 1.441E-04 8.846E+01
+ ETOT  9  -92.342555872414    -5.862E-04 1.441E-04 8.846E+01 2.258E-03 7.667E-02
  scprqt: <Vxc>= -1.5012962E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.357      0.389      0.145      0.266      0.126
-{SCF_istep: 9 , Vnl|psi>: 700 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 9 , Vnl|psi>: 830 , wall_time: '  2.09 [s] '} <<< TIME
  
  ITER STEP NUMBER    10
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2368E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3750
    Integrated=    2.6000E+01
- ETOT 10  -92.343100119117    -5.442E-04 3.115E-04 6.166E+01
+ ETOT 10  -92.343100119117    -5.442E-04 3.115E-04 6.166E+01 3.593E-03 7.311E-02
  scprqt: <Vxc>= -1.5018585E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.440      0.283      0.258     -0.463E-01  0.105
-{SCF_istep: 10 , Vnl|psi>: 697 , wall_time: '  1.84 [s] '} <<< TIME
+{SCF_istep: 10 , Vnl|psi>: 827 , wall_time: '  2.08 [s] '} <<< TIME
  
  ITER STEP NUMBER    11
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2252E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0333    0.3750
    Integrated=    2.6000E+01
- ETOT 11  -92.343392022471    -2.919E-04 1.545E-04 4.456E+01
+ ETOT 11  -92.343392022471    -2.919E-04 1.545E-04 4.456E+01 1.829E-03 7.131E-02
  scprqt: <Vxc>= -1.5026297E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.668      0.528      0.297     -0.148E-01 -0.511
-{SCF_istep: 11 , Vnl|psi>: 670 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 11 , Vnl|psi>: 800 , wall_time: '  2.03 [s] '} <<< TIME
  
  ITER STEP NUMBER    12
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2104E-01  at reduced coord.    0.2667    0.5000    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 12  -92.343524750404    -1.327E-04 3.275E-04 2.533E+01
+ ETOT 12  -92.343524750404    -1.327E-04 3.275E-04 2.533E+01 3.119E-03 6.820E-02
  scprqt: <Vxc>= -1.5038201E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.443      0.257      0.195      0.279      0.690E-01
-{SCF_istep: 12 , Vnl|psi>: 700 , wall_time: '  1.86 [s] '} <<< TIME
+{SCF_istep: 12 , Vnl|psi>: 830 , wall_time: '  2.07 [s] '} <<< TIME
  
  ITER STEP NUMBER    13
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2169E-01  at reduced coord.    0.2333    0.5000    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 13  -92.343513968184     1.078E-05 1.391E-04 3.020E+01
+ ETOT 13  -92.343513968184     1.078E-05 1.391E-04 3.020E+01 1.674E-03 6.985E-02
  scprqt: <Vxc>= -1.5036571E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.676      0.241     -0.221      0.105      0.217
-{SCF_istep: 13 , Vnl|psi>: 696 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 13 , Vnl|psi>: 826 , wall_time: '  2.07 [s] '} <<< TIME
  
  ITER STEP NUMBER    14
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2173E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 14  -92.343516264752    -2.297E-06 2.817E-04 2.863E+01
+ ETOT 14  -92.343516264752    -2.297E-06 2.817E-04 2.863E+01 1.492E-04 6.993E-02
  scprqt: <Vxc>= -1.5039276E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.418      0.492      0.941E-01 -0.224      0.856E-01
-{SCF_istep: 14 , Vnl|psi>: 700 , wall_time: '  1.80 [s] '} <<< TIME
+{SCF_istep: 14 , Vnl|psi>: 830 , wall_time: '  2.08 [s] '} <<< TIME
  
  ITER STEP NUMBER    15
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2168E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 15  -92.343529055259    -1.279E-05 1.157E-04 2.619E+01
+ ETOT 15  -92.343529055259    -1.279E-05 1.157E-04 2.619E+01 3.182E-04 6.961E-02
  scprqt: <Vxc>= -1.5041184E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.824      0.884E-01  0.878E-01  0.559E-01 -0.131
-{SCF_istep: 15 , Vnl|psi>: 700 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 15 , Vnl|psi>: 830 , wall_time: '  2.07 [s] '} <<< TIME
  
  ITER STEP NUMBER    16
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2155E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 16  -92.343542865477    -1.381E-05 2.248E-04 2.296E+01
+ ETOT 16  -92.343542865477    -1.381E-05 2.248E-04 2.296E+01 4.589E-04 6.919E-02
  scprqt: <Vxc>= -1.5043756E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.559      0.472     -0.421E-02 -0.498E-02  0.340E-01
-{SCF_istep: 16 , Vnl|psi>: 700 , wall_time: '  1.81 [s] '} <<< TIME
+{SCF_istep: 16 , Vnl|psi>: 830 , wall_time: '  2.08 [s] '} <<< TIME
  
  ITER STEP NUMBER    17
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2177E-01  at reduced coord.    0.2333    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 17  -92.343534577223     8.288E-06 8.765E-05 2.309E+01
+ ETOT 17  -92.343534577223     8.288E-06 8.765E-05 2.309E+01 4.761E-04 6.964E-02
  scprqt: <Vxc>= -1.5045263E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.125      0.445      0.437      0.527E-01 -0.223E-01
-{SCF_istep: 17 , Vnl|psi>: 670 , wall_time: '  1.74 [s] '} <<< TIME
+{SCF_istep: 17 , Vnl|psi>: 800 , wall_time: '  2.00 [s] '} <<< TIME
  
  ITER STEP NUMBER    18
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2184E-01  at reduced coord.    0.2333    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 18  -92.343530380924     4.196E-06 1.644E-04 2.318E+01
+ ETOT 18  -92.343530380924     4.196E-06 1.644E-04 2.318E+01 1.200E-04 6.976E-02
  scprqt: <Vxc>= -1.5045701E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=  0.526     -0.260      0.276      0.482      0.522E-01
-{SCF_istep: 18 , Vnl|psi>: 685 , wall_time: '  1.77 [s] '} <<< TIME
+{SCF_istep: 18 , Vnl|psi>: 815 , wall_time: '  2.06 [s] '} <<< TIME
  
  ITER STEP NUMBER    19
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2173E-01  at reduced coord.    0.5000    0.7333    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 19  -92.343541126395    -1.075E-05 6.309E-05 2.177E+01
+ ETOT 19  -92.343541126395    -1.075E-05 6.309E-05 2.177E+01 2.865E-04 6.948E-02
  scprqt: <Vxc>= -1.5046511E-01 hartree
  
  Pulay update with  7 previous iterations:
  mixing of old trial potential: alpha(m:m-4)=   2.01      0.117      -1.41     -0.216E-01  0.841E-01
-{SCF_istep: 19 , Vnl|psi>: 670 , wall_time: '  1.73 [s] '} <<< TIME
+{SCF_istep: 19 , Vnl|psi>: 800 , wall_time: '  2.01 [s] '} <<< TIME
  
  ITER STEP NUMBER    20
  Total charge density [el/Bohr^3]
 )     Maximum=    9.2165E-01  at reduced coord.    0.2667    0.5000    0.0000
 )     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
    Integrated=    2.6000E+01
- ETOT 20  -92.343549707783    -8.581E-06 1.157E-04 1.971E+01
+ ETOT 20  -92.343549707783    -8.581E-06 1.157E-04 1.971E+01 2.586E-04 6.922E-02
  scprqt: <Vxc>= -1.5048509E-01 hartree
  
  Pulay update with  7 previous iterations:
@@ -929,8 +950,8 @@ message: |
   maximum energy difference=  8.581E-06 exceeds toldfe=  1.000E-07
  
  
- fftdatar_write: About to write data to: mos2o_DS1_DEN with iomode: IO_MODE_FORTRAN
- IO operation , wall:  0.05 [s] , cpu:  0.00 [s] <<< TIME
+ fftdatar_write: About to write data to: mos2o_DS1_TIM1_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.10 [s] , cpu:  0.01 [s] <<< TIME
 - Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
  Integrated electronic density in atomic spheres:
  ------------------------------------------------
@@ -938,6 +959,1556 @@ message: |
     1        2.00000         10.42349198
     2        2.00000          3.79831482
     3        2.00000          3.79833192
+ Write iteration in HIST netCDF file (also create it)
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 6.92181E-02 3.26277E-02 (free atoms)
+ -9.25077969279952E-07 -6.91151486289750E-07 -8.76089457539904E-06
+  2.77907179801532E-07  1.81500412542860E-06  6.92181226148330E-02
+  6.47170789478420E-07 -1.12385263913885E-06 -6.92093617202576E-02
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+ -8.09652490959412E-07  6.31630613350050E-06  3.31113828531753E-04
+  8.52945121670513E-06 -1.01837318662958E-05 -2.61606590349065E+00
+ -7.71979872574572E-06  3.86742573279527E-06  2.61573478966212E+00
+ Total energy (etotal) [Ha]= -9.23435497077835E+01
+ fconv : at Broyd/MD step   1, gradients have not converged yet. 
+  max grad (force/stress) = 6.9218E-02 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+Inverse hessian has been initialized.
+ EXIT:           1           1
+ {mover_itime: 1 , wall_time: ' 54.21 [s] '} <<< TIME
+ 
+--- Iteration: ( 2/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631773421692E+00  1.71837768797772E+00 -8.76089457539904E-06
+  2.97631893720207E+00 -1.71837656412508E+00 -3.40577035033874E+00
+  2.97631930646568E+00 -1.71837950298184E+00  3.40577911123332E+00
+ Reduced coordinates (xred)
+  3.33333244962172E-01  6.66666444225017E-01 -2.31803286808047E-07
+  6.66666537314600E-01  3.33333556058191E-01 -9.01128023545421E-02
+  6.66666884389895E-01  3.33333333050125E-01  9.01130341578289E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3008E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  1  -92.339922178068    -9.234E+01 1.844E-04 4.345E+02 3.058E-02 9.979E-02
+ scprqt: <Vxc>= -1.4937522E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    110.064840517266
+{SCF_istep: 1 , Vnl|psi>: 2468 , wall_time: '  6.41 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.0384E-01  at reduced coord.    0.3000    0.6333    0.0208
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  2  -92.313145298010     2.678E-02 1.780E-04 5.541E+02 8.478E-02 1.508E-02
+ scprqt: <Vxc>= -1.4994554E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.697      0.303
+{SCF_istep: 2 , Vnl|psi>: 1503 , wall_time: '  3.88 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.5581E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.4333    0.0333    0.3958
+   Integrated=    2.6000E+01
+ ETOT  3  -92.265328010757     4.782E-02 7.110E-04 1.454E+03 1.242E-01 1.392E-01
+ scprqt: <Vxc>= -1.4921771E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.409      0.591     -0.114E-03
+{SCF_istep: 3 , Vnl|psi>: 804 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2294E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  4  -92.352475377643    -8.715E-02 4.183E-04 3.119E+00 7.864E-02 6.053E-02
+ scprqt: <Vxc>= -1.4979215E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.499      0.210      0.292     -0.848E-03
+{SCF_istep: 4 , Vnl|psi>: 803 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2286E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  5  -92.352552165080    -7.679E-05 3.277E-05 3.212E+00 2.293E-03 6.282E-02
+ scprqt: <Vxc>= -1.4970655E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.463      0.276      0.114      0.148     -0.130E-02
+{SCF_istep: 5 , Vnl|psi>: 828 , wall_time: '  2.14 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2299E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  6  -92.352570633949    -1.847E-05 4.583E-06 3.026E+00 5.332E-04 6.229E-02
+ scprqt: <Vxc>= -1.4971082E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.108      0.377      0.257      0.112      0.147
+{SCF_istep: 6 , Vnl|psi>: 803 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2294E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  7  -92.352570761173    -1.272E-07 1.286E-05 3.023E+00 1.879E-04 6.247E-02
+ scprqt: <Vxc>= -1.4971045E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.400     -0.123      0.270      0.233      0.962E-01
+{SCF_istep: 7 , Vnl|psi>: 830 , wall_time: '  2.15 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2298E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  8  -92.352572611599    -1.850E-06 2.185E-06 3.001E+00 4.719E-05 6.243E-02
+ scprqt: <Vxc>= -1.4971248E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.22     -0.230      -1.28      0.287E-01  0.141
+{SCF_istep: 8 , Vnl|psi>: 810 , wall_time: '  2.09 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2315E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  9  -92.352574649537    -2.038E-06 6.432E-06 2.860E+00 1.079E-04 6.253E-02
+ scprqt: <Vxc>= -1.4972479E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.11       2.19     -0.391      -1.68     -0.197
+{SCF_istep: 9 , Vnl|psi>: 821 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2338E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 10  -92.352574714106    -6.457E-08 1.321E-06 2.496E+00 3.154E-05 6.255E-02
+ scprqt: <Vxc>= -1.4974900E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.411      0.416       1.46      0.256      -1.34
+{SCF_istep: 10 , Vnl|psi>: 807 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2335E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 11  -92.352575375876    -6.618E-07 3.977E-06 2.412E+00 1.410E-05 6.256E-02
+ scprqt: <Vxc>= -1.4974972E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.16     -0.263      -1.85     -0.706       1.66
+{SCF_istep: 11 , Vnl|psi>: 814 , wall_time: '  2.05 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2314E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 12  -92.352580479716    -5.104E-06 7.148E-07 1.554E+00 5.819E-04 6.198E-02
+ scprqt: <Vxc>= -1.4977224E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.433       1.26     -0.226     -0.916     -0.805
+{SCF_istep: 12 , Vnl|psi>: 825 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    13
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2330E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 13  -92.352578362788     2.117E-06 1.770E-06 1.831E+00 4.220E-04 6.240E-02
+ scprqt: <Vxc>= -1.4977155E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.543      0.277      0.798     -0.355E-01 -0.909
+{SCF_istep: 13 , Vnl|psi>: 800 , wall_time: '  2.03 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    14
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2326E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 14  -92.352579829677    -1.467E-06 4.723E-07 1.565E+00 1.434E-04 6.226E-02
+ scprqt: <Vxc>= -1.4978133E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.832      0.295E-01  0.266E-02  0.825E-01 -0.984E-01
+{SCF_istep: 14 , Vnl|psi>: 830 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    15
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2317E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 15  -92.352580818610    -9.889E-07 1.421E-06 1.387E+00 1.853E-04 6.208E-02
+ scprqt: <Vxc>= -1.4978260E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.46      0.617     -0.194     -0.606     -0.536
+{SCF_istep: 15 , Vnl|psi>: 801 , wall_time: '  2.00 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    16
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2323E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 16  -92.352581259923    -4.413E-07 2.654E-07 1.080E+00 7.287E-05 6.215E-02
+ scprqt: <Vxc>= -1.4980447E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.642       1.34     -0.235     -0.374E-01 -0.588
+{SCF_istep: 16 , Vnl|psi>: 809 , wall_time: '  2.01 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    17
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2324E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 17  -92.352581603467    -3.435E-07 8.747E-07 8.973E-01 3.786E-05 6.211E-02
+ scprqt: <Vxc>= -1.4981412E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.49     -0.665      0.264     -0.159      0.311E-01
+{SCF_istep: 17 , Vnl|psi>: 810 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    18
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2323E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 18  -92.352581718730    -1.153E-07 1.523E-07 8.117E-01 1.121E-05 6.210E-02
+ scprqt: <Vxc>= -1.4981702E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.00      0.413     -0.324      0.143     -0.391
+{SCF_istep: 18 , Vnl|psi>: 801 , wall_time: '  2.16 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    19
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2322E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 19  -92.352582042017    -3.233E-07 5.831E-07 6.451E-01 5.736E-05 6.205E-02
+ scprqt: <Vxc>= -1.4982597E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.62     -0.137     -0.535      0.139     -0.173
+{SCF_istep: 19 , Vnl|psi>: 816 , wall_time: '  2.23 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    20
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2320E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 20  -92.352582257755    -2.157E-07 8.615E-08 4.961E-01 5.421E-05 6.199E-02
+ scprqt: <Vxc>= -1.4983266E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.86     -0.648E-01 -0.708     -0.225      0.342
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.961551E+01 Ha ,    8.058789E+02 eV
+ Evext_l    = :    -5.785322E+02 Ha ,   -1.574266E+04 eV
+ Evext_nl   = :     1.156336E+01 Ha ,    3.146552E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.686305E+02 Ha ,    7.309807E+03 eV
+ Exc_ks     = :    -1.646404E+01 Ha ,   -4.480092E+02 eV
+ Enn        = :     1.920712E+02 Ha ,    5.226523E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.235258E+01 Ha ,   -2.513042E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)=  8.29428435E-05  sigma(3 2)= -6.66643134E-10
+  sigma(2 2)=  8.29406960E-05  sigma(3 1)=  2.39639943E-10
+  sigma(3 3)=  3.82359768E-04  sigma(2 1)=  4.03083320E-10
+ 
+
+--- !ScfConvergenceWarning
+message: |
+    nstep 20 was not enough SCF cycles to converge.
+...
+ 
+ scprqt:  WARNING -
+  nstep=   20 was not enough SCF cycles to converge;
+  maximum energy difference=  2.157E-07 exceeds toldfe=  1.000E-07
+ 
+ 
+ fftdatar_write: About to write data to: mos2o_DS1_TIM2_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.43283594
+    2        2.00000          3.81973126
+    3        2.00000          3.81972771
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631773421692E+00  1.71837768797772E+00 -8.76089457539904E-06
+  2.97631893720207E+00 -1.71837656412508E+00 -3.40577035033874E+00
+  2.97631930646568E+00 -1.71837950298184E+00  3.40577911123332E+00
+ Reduced coordinates (xred)
+  3.33333244962172E-01  6.66666444225017E-01 -2.31803286808047E-07
+  6.66666537314600E-01  3.33333556058191E-01 -9.01128023545421E-02
+  6.66666884389895E-01  3.33333333050125E-01  9.01130341578289E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 6.19911E-02 2.92222E-02 (free atoms)
+  2.10176185307001E-07  2.35754366094862E-07  2.71978613273918E-06
+ -2.30902710209670E-07 -1.96858699023301E-07  6.19883329099134E-02
+  2.07265249026684E-08 -3.88956670715611E-08 -6.19910526960461E-02
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+  5.89794314379517E-07 -1.84089691851681E-06 -1.02793018617944E-04
+ -3.27593151556630E-07  1.70207324131423E-06 -2.34281945267757E+00
+ -2.62201162822887E-07  1.38823677202583E-07  2.34292224569619E+00
+ Total energy (etotal) [Ha]= -9.23525822577546E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-9.03255E-03
+           Relative     =-9.78098E-05
+ fconv : at Broyd/MD step   2, gradients have not converged yet. 
+  max grad (force/stress) = 6.1991E-02 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 2 , wall_time: ' 50.57 [s] '} <<< TIME
+ 
+--- Iteration: ( 3/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631974791676E+00  1.71837994674290E+00  1.72974051031513E-05
+  2.97631672491999E+00 -1.71837845022839E+00 -2.81185902920862E+00
+  2.97631950504792E+00 -1.71837987564372E+00  2.81184173180352E+00
+ Reduced coordinates (xred)
+  3.33333364170031E-01  6.66667001591164E-01  4.57669627416800E-07
+  6.66666348601636E-01  3.33333001476388E-01 -7.43985856012602E-02
+  6.66666953895000E-01  3.33333330265781E-01  7.43981279316328E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.9496E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    1.2897E-08  at reduced coord.    0.3667    0.7333    0.4583
+   Integrated=    2.6000E+01
+ ETOT  1  -91.701262793324    -9.170E+01 8.333E-03 1.661E+04 2.725E-01 3.345E-01
+ scprqt: <Vxc>= -1.3747182E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    774.272136679605
+{SCF_istep: 1 , Vnl|psi>: 2472 , wall_time: '  6.12 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    8.4692E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0667    0.3906
+   Integrated=    2.6000E+01
+ ETOT  2  -91.862034490447    -1.608E-01 3.479E-03 3.909E+03 4.980E-01 1.635E-01
+ scprqt: <Vxc>= -1.4040337E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.535      0.465
+{SCF_istep: 2 , Vnl|psi>: 1518 , wall_time: '  3.81 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.7128E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0667    0.0000    0.5000
+   Integrated=    2.6000E+01
+ ETOT  3  -92.309965052588    -4.479E-01 5.629E-03 1.858E+03 1.719E-01 8.344E-03
+ scprqt: <Vxc>= -1.4055977E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.752      0.238      0.100E-01
+{SCF_istep: 3 , Vnl|psi>: 813 , wall_time: '  2.10 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3762E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.5000    0.1333    0.3750
+   Integrated=    2.6000E+01
+ ETOT  4  -92.374782091645    -6.482E-02 6.124E-04 4.269E+02 2.936E-02 2.103E-02
+ scprqt: <Vxc>= -1.4026640E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.727      0.261      0.396E-01 -0.277E-01
+{SCF_istep: 4 , Vnl|psi>: 824 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3964E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1667    0.0000    0.3542
+   Integrated=    2.6000E+01
+ ETOT  5  -92.375813337279    -1.031E-03 2.347E-04 3.564E+02 2.450E-03 2.348E-02
+ scprqt: <Vxc>= -1.4018060E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.863      0.601E-01  0.889E-01  0.688E-02 -0.189E-01
+{SCF_istep: 5 , Vnl|psi>: 826 , wall_time: '  2.14 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4045E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3594
+   Integrated=    2.6000E+01
+ ETOT  6  -92.376222718575    -4.094E-04 1.830E-04 3.054E+02 2.944E-03 2.642E-02
+ scprqt: <Vxc>= -1.4035010E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.738      0.465     -0.166     -0.187E-01 -0.839E-02
+{SCF_istep: 6 , Vnl|psi>: 817 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4083E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1667    0.0000    0.3594
+   Integrated=    2.6000E+01
+ ETOT  7  -92.376494777903    -2.721E-04 2.453E-04 2.593E+02 2.085E-03 2.851E-02
+ scprqt: <Vxc>= -1.4053504E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.902      0.273      0.878E-01 -0.178     -0.735E-01
+{SCF_istep: 7 , Vnl|psi>: 825 , wall_time: '  2.13 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4075E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1000    0.3333    0.3594
+   Integrated=    2.6000E+01
+ ETOT  8  -92.376755925578    -2.611E-04 1.940E-04 2.095E+02 1.939E-03 3.044E-02
+ scprqt: <Vxc>= -1.4075414E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.978      0.370E-01  0.376E-01  0.832E-01 -0.668E-01
+{SCF_istep: 8 , Vnl|psi>: 830 , wall_time: '  2.21 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4052E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3646
+   Integrated=    2.6000E+01
+ ETOT  9  -92.376883103037    -1.272E-04 1.305E-04 1.790E+02 9.204E-04 3.136E-02
+ scprqt: <Vxc>= -1.4089343E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.939      0.511     -0.374     -0.126      0.547E-01
+{SCF_istep: 9 , Vnl|psi>: 828 , wall_time: '  2.19 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4026E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3646
+   Integrated=    2.6000E+01
+ ETOT 10  -92.376977821373    -9.472E-05 4.592E-04 1.484E+02 6.964E-04 3.206E-02
+ scprqt: <Vxc>= -1.4104434E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.628      0.436      0.458     -0.423     -0.182
+{SCF_istep: 10 , Vnl|psi>: 815 , wall_time: '  2.09 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4013E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3646
+   Integrated=    2.6000E+01
+ ETOT 11  -92.377007333003    -2.951E-05 2.818E-04 1.329E+02 4.161E-05 3.210E-02
+ scprqt: <Vxc>= -1.4112305E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.474      0.534      0.584E-01  0.397     -0.323
+{SCF_istep: 11 , Vnl|psi>: 828 , wall_time: '  2.13 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4021E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3646
+   Integrated=    2.6000E+01
+ ETOT 12  -92.377035131927    -2.780E-05 9.788E-04 1.179E+02 4.001E-04 3.250E-02
+ scprqt: <Vxc>= -1.4120758E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.736      0.241      0.188     -0.219      0.302
+{SCF_istep: 12 , Vnl|psi>: 813 , wall_time: '  2.15 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    13
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3992E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 13  -92.377072508452    -3.738E-05 4.796E-04 1.014E+02 7.392E-04 3.324E-02
+ scprqt: <Vxc>= -1.4129215E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.344      0.427      0.241      0.195     -0.278
+{SCF_istep: 13 , Vnl|psi>: 809 , wall_time: '  2.15 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    14
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4010E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 14  -92.377068414825     4.094E-06 1.489E-03 9.895E+01 1.886E-04 3.305E-02
+ scprqt: <Vxc>= -1.4130533E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.228      0.176      0.412      0.223      0.171
+{SCF_istep: 14 , Vnl|psi>: 813 , wall_time: '  2.21 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    15
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4012E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 15  -92.377060985893     7.429E-06 5.241E-04 1.000E+02 1.021E-04 3.295E-02
+ scprqt: <Vxc>= -1.4128806E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.58     -0.201     -0.158     -0.113      0.426E-01
+{SCF_istep: 15 , Vnl|psi>: 824 , wall_time: '  2.21 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    16
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4016E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 16  -92.377080518149    -1.953E-05 1.412E-03 8.095E+01 3.106E-04 3.326E-02
+ scprqt: <Vxc>= -1.4139427E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.193       1.35     -0.260     -0.230E-01 -0.118
+{SCF_istep: 16 , Vnl|psi>: 813 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    17
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4017E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 17  -92.377084123080    -3.605E-06 3.695E-04 7.755E+01 7.347E-05 3.333E-02
+ scprqt: <Vxc>= -1.4141514E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)= -0.123      0.283       1.32     -0.271     -0.196E-01
+{SCF_istep: 17 , Vnl|psi>: 823 , wall_time: '  2.13 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    18
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4005E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 18  -92.377069620039     1.450E-05 8.899E-04 8.808E+01 2.646E-04 3.307E-02
+ scprqt: <Vxc>= -1.4133297E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.903E-01 -0.179      0.282       1.32     -0.315
+{SCF_istep: 18 , Vnl|psi>: 813 , wall_time: '  2.10 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    19
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4006E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 19  -92.377069965018    -3.450E-07 6.322E-04 8.735E+01 2.551E-06 3.307E-02
+ scprqt: <Vxc>= -1.4133699E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.37      -1.48      0.213     -0.856E-01 -0.217E-01
+{SCF_istep: 19 , Vnl|psi>: 813 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    20
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4018E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.1333    0.0000    0.3698
+   Integrated=    2.6000E+01
+ ETOT 20  -92.377069313114     6.519E-07 5.215E-04 8.091E+01 5.111E-05 3.302E-02
+ scprqt: <Vxc>= -1.4136528E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.00       3.05      -2.62      0.250     -0.553
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     3.020770E+01 Ha ,    8.219932E+02 eV
+ Evext_l    = :    -6.221037E+02 Ha ,   -1.692830E+04 eV
+ Evext_nl   = :     1.163998E+01 Ha ,    3.167399E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.900329E+02 Ha ,    7.892196E+03 eV
+ Exc_ks     = :    -1.669109E+01 Ha ,   -4.541877E+02 eV
+ Enn        = :     2.137740E+02 Ha ,    5.817087E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.237707E+01 Ha ,   -2.513708E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -7.00937273E-05  sigma(3 2)= -3.68272850E-10
+  sigma(2 2)= -7.00952551E-05  sigma(3 1)=  8.88007922E-10
+  sigma(3 3)= -1.73873482E-04  sigma(2 1)=  1.79386507E-09
+ 
+
+--- !ScfConvergenceWarning
+message: |
+    nstep 20 was not enough SCF cycles to converge.
+...
+ 
+ scprqt:  WARNING -
+  nstep=   20 was not enough SCF cycles to converge;
+  maximum energy difference=  6.519E-07 exceeds toldfe=  1.000E-07
+ 
+ 
+ fftdatar_write: About to write data to: mos2o_DS1_TIM3_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.59980275
+    2        2.00000          3.98070197
+    3        2.00000          3.98071293
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631974791676E+00  1.71837994674290E+00  1.72974051031513E-05
+  2.97631672491999E+00 -1.71837845022839E+00 -2.81185902920862E+00
+  2.97631950504792E+00 -1.71837987564372E+00  2.81184173180352E+00
+ Reduced coordinates (xred)
+  3.33333364170031E-01  6.66667001591164E-01  4.57669627416800E-07
+  6.66666348601636E-01  3.33333001476388E-01 -7.43985856012602E-02
+  6.66666953895000E-01  3.33333330265781E-01  7.43981279316328E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 3.30216E-02 1.55643E-02 (free atoms)
+ -3.34524538756968E-07 -1.67073772564216E-06 -9.34915127225255E-06
+  1.15743775522215E-06  1.23338054077579E-06 -3.30122943506905E-02
+ -8.22913216465182E-07  4.37357184866373E-07  3.30216435019627E-02
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+ -7.61722712812259E-06  9.60853038151135E-06  3.53346709589534E-04
+  2.91333977568333E-06 -9.80314695136348E-06  1.24768390682026E+00
+  4.70388735243926E-06  1.94616569852127E-07 -1.24803725352985E+00
+ Total energy (etotal) [Ha]= -9.23770693131141E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-2.44871E-02
+           Relative     =-2.65112E-04
+ fconv : at Broyd/MD step   3, gradients have not converged yet. 
+  max grad (force/stress) = 3.3022E-02 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 3 , wall_time: ' 51.10 [s] '} <<< TIME
+ 
+--- Iteration: ( 4/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631890288182E+00  1.71837815358237E+00  3.08663425448353E-06
+  2.97631816869609E+00 -1.71837705842492E+00 -3.01825410147559E+00
+  2.97631890630676E+00 -1.71837947428666E+00  3.01825101484133E+00
+ Reduced coordinates (xred)
+  3.33333396130113E-01  6.66666685711571E-01  8.16688249362936E-08
+  6.66666456153627E-01  3.33333379012275E-01 -7.98595640117084E-02
+  6.66666814382927E-01  3.33333268609487E-01  7.98594823428836E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2240E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.6667    0.3333    0.4010
+   Integrated=    2.6000E+01
+ ETOT  1  -92.236193742579    -9.224E+01 1.568E-03 4.302E+03 1.242E-01 1.572E-01
+ scprqt: <Vxc>= -1.4761913E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    295.750376570763
+{SCF_istep: 1 , Vnl|psi>: 2467 , wall_time: '  6.21 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.8356E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0333    0.0667    0.4063
+   Integrated=    2.6000E+01
+ ETOT  2  -92.215483137493     2.071E-02 1.529E-03 1.474E+03 2.557E-01 9.851E-02
+ scprqt: <Vxc>= -1.4580418E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.585      0.415
+{SCF_istep: 2 , Vnl|psi>: 1530 , wall_time: '  3.83 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    8.9698E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.6333    0.2667    0.4063
+   Integrated=    2.6000E+01
+ ETOT  3  -92.292172510479    -7.669E-02 2.154E-03 1.732E+03 1.598E-01 6.132E-02
+ scprqt: <Vxc>= -1.4690881E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.586      0.409      0.435E-02
+{SCF_istep: 3 , Vnl|psi>: 807 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3042E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.6333    0.2667    0.4063
+   Integrated=    2.6000E+01
+ ETOT  4  -92.380015818989    -8.784E-02 7.533E-04 1.650E+02 5.861E-02 2.711E-03
+ scprqt: <Vxc>= -1.4633501E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.921      0.159E-01  0.688E-01 -0.553E-02
+{SCF_istep: 4 , Vnl|psi>: 819 , wall_time: '  2.13 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3255E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3958
+   Integrated=    2.6000E+01
+ ETOT  5  -92.381561707473    -1.546E-03 7.448E-04 9.160E+01 4.510E-03 1.802E-03
+ scprqt: <Vxc>= -1.4573771E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.693      0.441     -0.988E-01 -0.290E-01 -0.679E-02
+{SCF_istep: 5 , Vnl|psi>: 830 , wall_time: '  2.18 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3363E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3958
+   Integrated=    2.6000E+01
+ ETOT  6  -92.381911138893    -3.494E-04 3.497E-04 6.288E+01 2.976E-03 4.778E-03
+ scprqt: <Vxc>= -1.4555841E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.663      0.243      0.249     -0.100     -0.505E-01
+{SCF_istep: 6 , Vnl|psi>: 820 , wall_time: '  2.12 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3368E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3958
+   Integrated=    2.6000E+01
+ ETOT  7  -92.381990419460    -7.928E-05 4.583E-04 5.224E+01 7.625E-04 5.540E-03
+ scprqt: <Vxc>= -1.4544132E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.730      0.258      0.231E-01  0.118     -0.776E-01
+{SCF_istep: 7 , Vnl|psi>: 830 , wall_time: '  2.20 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3369E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.4000    0.1000    0.3906
+   Integrated=    2.6000E+01
+ ETOT  8  -92.382042538529    -5.212E-05 2.091E-04 4.368E+01 7.250E-04 6.265E-03
+ scprqt: <Vxc>= -1.4534027E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.13     -0.959E-01  0.652E-01 -0.592E-01  0.105E-01
+{SCF_istep: 8 , Vnl|psi>: 812 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3362E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2333    0.0333    0.3906
+   Integrated=    2.6000E+01
+ ETOT  9  -92.382077567502    -3.503E-05 2.898E-04 3.600E+01 5.456E-04 6.810E-03
+ scprqt: <Vxc>= -1.4523552E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.810      0.227      0.789E-02  0.454E-01 -0.390E-01
+{SCF_istep: 9 , Vnl|psi>: 813 , wall_time: '  2.18 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3362E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2333    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 10  -92.382093157284    -1.559E-05 1.283E-04 3.176E+01 2.908E-04 7.101E-03
+ scprqt: <Vxc>= -1.4517530E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.908     -0.866E-01  0.280     -0.194E-01 -0.113E-01
+{SCF_istep: 10 , Vnl|psi>: 819 , wall_time: '  2.10 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3354E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2333    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 11  -92.382095704435    -2.547E-06 1.755E-04 2.951E+01 2.355E-06 7.103E-03
+ scprqt: <Vxc>= -1.4514188E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.70      0.719E-01 -0.757      0.423E-01  0.181E-01
+{SCF_istep: 11 , Vnl|psi>: 814 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3360E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 12  -92.382117576123    -2.187E-05 7.692E-05 2.189E+01 5.074E-04 7.611E-03
+ scprqt: <Vxc>= -1.4502863E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.129       1.37      0.211     -0.687      0.223E-01
+{SCF_istep: 12 , Vnl|psi>: 818 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    13
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3376E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 13  -92.382120022428    -2.446E-06 1.066E-04 2.144E+01 1.946E-04 7.805E-03
+ scprqt: <Vxc>= -1.4503462E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.180     -0.384E-01   1.33      0.255     -0.684
+{SCF_istep: 13 , Vnl|psi>: 807 , wall_time: '  2.02 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    14
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3378E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 14  -92.382119435956     5.865E-07 4.511E-05 2.155E+01 7.817E-06 7.813E-03
+ scprqt: <Vxc>= -1.4503717E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)= -0.428      0.702     -0.122       1.33      0.233
+{SCF_istep: 14 , Vnl|psi>: 827 , wall_time: '  2.06 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    15
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3376E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 15  -92.382118304972     1.131E-06 6.243E-05 2.188E+01 4.684E-05 7.766E-03
+ scprqt: <Vxc>= -1.4504244E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)= -0.784      0.978      0.232     -0.245       1.27
+{SCF_istep: 15 , Vnl|psi>: 801 , wall_time: '  2.00 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    16
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3367E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 16  -92.382116183507     2.121E-06 2.626E-05 2.223E+01 1.496E-04 7.617E-03
+ scprqt: <Vxc>= -1.4504335E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   3.14      -4.91       3.04      0.173      -1.02
+{SCF_istep: 16 , Vnl|psi>: 807 , wall_time: '  2.01 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    17
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3378E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.2000    0.0000    0.3906
+   Integrated=    2.6000E+01
+ ETOT 17  -92.382118343417    -2.160E-06 3.676E-05 2.114E+01 1.893E-04 7.806E-03
+ scprqt: <Vxc>= -1.4503946E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.31       5.82      -5.68      0.359      0.543
+{SCF_istep: 17 , Vnl|psi>: 813 , wall_time: '  2.02 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    18
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3353E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0667    0.3333    0.3854
+   Integrated=    2.6000E+01
+ ETOT 18  -92.382111857888     6.486E-06 1.527E-05 1.912E+01 3.929E-04 7.413E-03
+ scprqt: <Vxc>= -1.4501272E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.614      0.332       2.44      -1.50      -1.14
+{SCF_istep: 18 , Vnl|psi>: 807 , wall_time: '  2.03 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    19
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3357E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0333    0.3854
+   Integrated=    2.6000E+01
+ ETOT 19  -92.382120942273    -9.084E-06 2.104E-05 1.605E+01 2.630E-04 7.676E-03
+ scprqt: <Vxc>= -1.4496366E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.67      -1.68       2.51       2.40      -4.83
+{SCF_istep: 19 , Vnl|psi>: 830 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    20
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3365E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.4000    0.0000    0.3854
+   Integrated=    2.6000E+01
+ ETOT 20  -92.382126846383    -5.904E-06 8.743E-06 1.488E+01 2.334E-04 7.909E-03
+ scprqt: <Vxc>= -1.4494017E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.31      0.286      -1.18       2.27       2.62
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.994161E+01 Ha ,    8.147527E+02 eV
+ Evext_l    = :    -6.067187E+02 Ha ,   -1.650965E+04 eV
+ Evext_nl   = :     1.160643E+01 Ha ,    3.158269E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.824339E+02 Ha ,    7.685418E+03 eV
+ Exc_ks     = :    -1.659913E+01 Ha ,   -4.516853E+02 eV
+ Enn        = :     2.061906E+02 Ha ,    5.610731E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.238213E+01 Ha ,   -2.513846E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)=  3.73971209E-06  sigma(3 2)= -5.53905583E-10
+  sigma(2 2)=  3.73312731E-06  sigma(3 1)=  1.43581052E-10
+  sigma(3 3)=  7.53806988E-05  sigma(2 1)= -3.20678889E-09
+ 
+
+--- !ScfConvergenceWarning
+message: |
+    nstep 20 was not enough SCF cycles to converge.
+...
+ 
+ scprqt:  WARNING -
+  nstep=   20 was not enough SCF cycles to converge;
+  maximum energy difference=  5.904E-06 exceeds toldfe=  1.000E-07
+ 
+ 
+ fftdatar_write: About to write data to: mos2o_DS1_TIM4_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.52241714
+    2        2.00000          3.90692997
+    3        2.00000          3.90693172
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631890288182E+00  1.71837815358237E+00  3.08663425448353E-06
+  2.97631816869609E+00 -1.71837705842492E+00 -3.01825410147559E+00
+  2.97631890630676E+00 -1.71837947428666E+00  3.01825101484133E+00
+ Reduced coordinates (xred)
+  3.33333396130113E-01  6.66666685711571E-01  8.16688249362936E-08
+  6.66666456153627E-01  3.33333379012275E-01 -7.98595640117084E-02
+  6.66666814382927E-01  3.33333268609487E-01  7.98594823428836E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 7.90943E-03 3.72815E-03 (free atoms)
+  5.66469275102828E-07 -5.34231593356068E-07 -1.65010523381614E-06
+  5.45253092242501E-07  8.93444987448386E-07  7.90942860686624E-03
+ -1.11172236734533E-06 -3.59213394092318E-07 -7.90777850163242E-03
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+ -4.44002913181823E-06  1.06804298500664E-06  6.23649396470745E-05
+  2.98298269563841E-06 -6.22867660059760E-06 -2.98933078691768E-01
+  1.45704643617982E-06  5.16063361559096E-06  2.98870713752121E-01
+ Total energy (etotal) [Ha]= -9.23821268463827E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-5.05753E-03
+           Relative     =-5.47473E-05
+ fconv : at Broyd/MD step   4, gradients have not converged yet. 
+  max grad (force/stress) = 7.9094E-03 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 4 , wall_time: ' 50.15 [s] '} <<< TIME
+ 
+--- Iteration: ( 5/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631945853746E+00  1.71837774624506E+00  2.69487852398188E-06
+  2.97631855324946E+00 -1.71837636824673E+00 -2.97836801323327E+00
+  2.97631796609774E+00 -1.71837975712753E+00  2.97836531835475E+00
+ Reduced coordinates (xred)
+  3.33333528984159E-01  6.66666739549781E-01  7.13034147404935E-08
+  6.66666453814969E-01  3.33333510555303E-01 -7.88042235698264E-02
+  6.66666683867540E-01  3.33333083228250E-01  7.88041522664117E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3813E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0333    0.3750
+   Integrated=    2.6000E+01
+ ETOT  1  -92.377171860798    -9.238E+01 9.037E-05 2.119E+02 2.526E-02 3.316E-02
+ scprqt: <Vxc>= -1.4355386E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    58.9340709180626
+{SCF_istep: 1 , Vnl|psi>: 2447 , wall_time: '  6.04 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.2585E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0333    0.3750
+   Integrated=    2.6000E+01
+ ETOT  2  -92.377015237331     1.566E-04 2.317E-05 4.419E+01 4.707E-02 1.390E-02
+ scprqt: <Vxc>= -1.4389695E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.858      0.142
+{SCF_istep: 2 , Vnl|psi>: 1530 , wall_time: '  3.80 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.4926E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  3  -92.369177113044     7.838E-03 1.640E-04 2.073E+02 4.007E-02 2.617E-02
+ scprqt: <Vxc>= -1.4368072E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.405      0.594      0.982E-03
+{SCF_istep: 3 , Vnl|psi>: 807 , wall_time: '  2.12 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3492E-01  at reduced coord.    0.2333    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT  4  -92.382491324855    -1.331E-02 5.291E-05 6.785E+00 2.310E-02 3.064E-03
+ scprqt: <Vxc>= -1.4385531E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.516      0.194      0.291     -0.919E-03
+{SCF_istep: 4 , Vnl|psi>: 813 , wall_time: '  2.14 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3499E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3000    0.0333    0.3750
+   Integrated=    2.6000E+01
+ ETOT  5  -92.382508315227    -1.699E-05 4.809E-06 6.014E+00 7.804E-05 3.142E-03
+ scprqt: <Vxc>= -1.4389588E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.305      0.310      0.154      0.233     -0.121E-02
+{SCF_istep: 5 , Vnl|psi>: 826 , wall_time: '  2.10 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3492E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT  6  -92.382514859758    -6.545E-06 4.696E-07 5.444E+00 3.637E-04 2.779E-03
+ scprqt: <Vxc>= -1.4390357E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.293      0.850E-01  0.335      0.116      0.173
+{SCF_istep: 6 , Vnl|psi>: 808 , wall_time: '  2.00 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3489E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT  7  -92.382518955382    -4.096E-06 1.261E-06 5.023E+00 1.870E-04 2.592E-03
+ scprqt: <Vxc>= -1.4391295E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.195      0.181      0.149E-01  0.327      0.114
+{SCF_istep: 7 , Vnl|psi>: 830 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3489E-01  at reduced coord.    0.2333    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT  8  -92.382519266644    -3.113E-07 1.870E-07 4.959E+00 2.111E-06 2.590E-03
+ scprqt: <Vxc>= -1.4391426E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   8.77      -6.39      -1.13     -0.442      0.137
+{SCF_istep: 8 , Vnl|psi>: 810 , wall_time: '  2.06 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3499E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT  9  -92.382528146844    -8.880E-06 3.503E-07 3.648E+00 4.164E-04 2.173E-03
+ scprqt: <Vxc>= -1.4396196E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.658       5.06      -2.67      -1.13     -0.892
+{SCF_istep: 9 , Vnl|psi>: 813 , wall_time: '  2.09 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3502E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 10  -92.382532824848    -4.678E-06 1.334E-07 2.900E+00 2.411E-04 1.932E-03
+ scprqt: <Vxc>= -1.4399973E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.699     -0.241       1.06      0.834     -0.651
+{SCF_istep: 10 , Vnl|psi>: 819 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3500E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 11  -92.382532172730     6.521E-07 1.587E-07 2.916E+00 8.046E-05 2.013E-03
+ scprqt: <Vxc>= -1.4399476E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.61     -0.376      -1.13      -10.1       9.67
+{SCF_istep: 11 , Vnl|psi>: 825 , wall_time: '  2.09 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3475E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 12  -92.382537326638    -5.154E-06 4.524E-08 1.799E+00 5.548E-04 1.458E-03
+ scprqt: <Vxc>= -1.4403555E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.211       1.81     -0.335     -0.609      -7.83
+{SCF_istep: 12 , Vnl|psi>: 810 , wall_time: '  2.05 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    13
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3482E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 13  -92.382536886727     4.399E-07 8.396E-08 2.027E+00 1.727E-04 1.631E-03
+ scprqt: <Vxc>= -1.4402432E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.390      0.209       1.41     -0.461     -0.236
+{SCF_istep: 13 , Vnl|psi>: 813 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    14
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3484E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 14  -92.382537143236    -2.565E-07 2.713E-08 1.916E+00 7.863E-06 1.623E-03
+ scprqt: <Vxc>= -1.4402979E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.22     -0.123E-01  -1.16      -1.01      0.323
+{SCF_istep: 14 , Vnl|psi>: 810 , wall_time: '  2.13 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    15
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3481E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 15  -92.382538084731    -9.415E-07 4.497E-08 1.548E+00 1.508E-04 1.472E-03
+ scprqt: <Vxc>= -1.4404642E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.820      0.901     -0.350     -0.688       1.55
+{SCF_istep: 15 , Vnl|psi>: 817 , wall_time: '  2.08 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    16
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3483E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 16  -92.382538600978    -5.162E-07 1.238E-08 1.357E+00 3.158E-05 1.440E-03
+ scprqt: <Vxc>= -1.4405805E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.78     -0.292      0.259E-01 -0.320     -0.651
+{SCF_istep: 16 , Vnl|psi>: 808 , wall_time: '  2.00 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    17
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3480E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 17  -92.382538952509    -3.515E-07 2.487E-08 1.004E+00 1.279E-04 1.313E-03
+ scprqt: <Vxc>= -1.4407624E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.297      0.930     -0.262      0.514E-01 -0.235
+{SCF_istep: 17 , Vnl|psi>: 815 , wall_time: '  2.03 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    18
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3488E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 18  -92.382538164863     7.876E-07 7.936E-09 1.385E+00 2.399E-04 1.553E-03
+ scprqt: <Vxc>= -1.4405384E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.80     -0.125     -0.247     -0.144E-01  0.229
+{SCF_istep: 18 , Vnl|psi>: 807 , wall_time: '  2.02 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    19
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3489E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 19  -92.382538869756    -7.049E-07 1.026E-08 1.001E+00 6.266E-05 1.490E-03
+ scprqt: <Vxc>= -1.4407441E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.614      0.768     -0.431E-01  0.268     -0.416
+{SCF_istep: 19 , Vnl|psi>: 819 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    20
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3486E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
+   Integrated=    2.6000E+01
+ ETOT 20  -92.382539170323    -3.006E-07 3.714E-09 8.649E-01 7.343E-05 1.416E-03
+ scprqt: <Vxc>= -1.4408145E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.80     -0.619      0.317     -0.239      0.426
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.999066E+01 Ha ,    8.160874E+02 eV
+ Evext_l    = :    -6.097267E+02 Ha ,   -1.659151E+04 eV
+ Evext_nl   = :     1.161297E+01 Ha ,    3.160050E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.839405E+02 Ha ,    7.726415E+03 eV
+ Exc_ks     = :    -1.661688E+01 Ha ,   -4.521683E+02 eV
+ Enn        = :     2.076537E+02 Ha ,    5.650546E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.238254E+01 Ha ,   -2.513857E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -7.45589171E-06  sigma(3 2)= -8.22707641E-10
+  sigma(2 2)= -7.45577226E-06  sigma(3 1)= -1.36592751E-10
+  sigma(3 3)=  2.48606632E-05  sigma(2 1)= -8.06277326E-10
+ 
+
+--- !ScfConvergenceWarning
+message: |
+    nstep 20 was not enough SCF cycles to converge.
+...
+ 
+ scprqt:  WARNING -
+  nstep=   20 was not enough SCF cycles to converge;
+  maximum energy difference=  3.006E-07 exceeds toldfe=  1.000E-07
+ 
+ 
+ fftdatar_write: About to write data to: mos2o_DS1_TIM5_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.03 [s] , cpu:  0.01 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.53600798
+    2        2.00000          3.94710823
+    3        2.00000          3.94710975
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631945853746E+00  1.71837774624506E+00  2.69487852398188E-06
+  2.97631855324946E+00 -1.71837636824673E+00 -2.97836801323327E+00
+  2.97631796609774E+00 -1.71837975712753E+00  2.97836531835475E+00
+ Reduced coordinates (xred)
+  3.33333528984159E-01  6.66666739549781E-01  7.13034147404935E-08
+  6.66666453814969E-01  3.33333510555303E-01 -7.88042235698264E-02
+  6.66666683867540E-01  3.33333083228250E-01  7.88041522664117E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 1.41643E-03 6.67428E-04 (free atoms)
+ -2.16031701117281E-07  3.11386128112734E-07 -1.20474924008496E-06
+ -5.08395041738756E-08 -3.48416816879260E-07  1.41643032636431E-03
+  2.66871205291156E-07  3.70306887665269E-08 -1.41522557712422E-03
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+  2.24821675336361E-06 -9.62258387294454E-07  4.55329224512535E-05
+ -1.64482121024901E-06  1.94745034005303E-06 -5.35333080628474E-02
+ -6.03395543114597E-07 -9.85191952758572E-07  5.34877751403962E-02
+ Total energy (etotal) [Ha]= -9.23825391703232E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-4.12324E-04
+           Relative     =-4.46323E-06
+ fconv : at Broyd/MD step   5, gradients have not converged yet. 
+  max grad (force/stress) = 1.4164E-03 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 5 , wall_time: ' 49.76 [s] '} <<< TIME
+ 
+--- Iteration: ( 6/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631919303943E+00  1.71837815320353E+00  1.50181765502437E-06
+  2.97631845628128E+00 -1.71837683696484E+00 -2.96966981722052E+00
+  2.97631832856397E+00 -1.71837969536789E+00  2.96966831540287E+00
+ Reduced coordinates (xred)
+  3.33333444911236E-01  6.66666734419205E-01  3.97363837248487E-08
+  6.66666482986297E-01  3.33333448804067E-01 -7.85740792155366E-02
+  6.66666738769134E-01  3.33333150110062E-01  7.85740394791529E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ 
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3551E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  1  -92.382406471266    -9.238E+01 3.003E-06 1.722E+01 3.721E-03 5.137E-03
+ scprqt: <Vxc>= -1.4394254E-01 hartree
+ 
+ Simple mixing update:
+  residual square of the potential:    13.3755608156881
+{SCF_istep: 1 , Vnl|psi>: 2451 , wall_time: '  6.43 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3376E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  2  -92.382408221178    -1.750E-06 5.702E-07 1.149E+00 8.072E-03 2.935E-03
+ scprqt: <Vxc>= -1.4398968E-01 hartree
+ 
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.983      0.170E-01
+{SCF_istep: 2 , Vnl|psi>: 1530 , wall_time: '  3.96 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     3
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3789E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  3  -92.382055117582     3.531E-04 5.105E-06 7.240E+00 7.298E-03 4.364E-03
+ scprqt: <Vxc>= -1.4394879E-01 hartree
+ 
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.348      0.653     -0.127E-02
+{SCF_istep: 3 , Vnl|psi>: 807 , wall_time: '  2.09 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     4
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3525E-01  at reduced coord.    0.2667    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  4  -92.382543989257    -4.889E-04 1.947E-06 2.537E-01 4.419E-03 5.578E-05
+ scprqt: <Vxc>= -1.4397794E-01 hartree
+ 
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.187      0.285      0.529     -0.847E-03
+{SCF_istep: 4 , Vnl|psi>: 813 , wall_time: '  2.10 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     5
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3517E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  5  -92.382545548662    -1.559E-06 3.115E-08 1.553E-01 2.756E-05 8.310E-05
+ scprqt: <Vxc>= -1.4398675E-01 hartree
+ 
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.458      0.110      0.152      0.280     -0.101E-02
+{SCF_istep: 5 , Vnl|psi>: 830 , wall_time: '  2.11 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     6
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3512E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  6  -92.382546161580    -6.129E-07 2.862E-09 1.039E-01 1.920E-04 2.750E-04
+ scprqt: <Vxc>= -1.4399049E-01 hartree
+ 
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.524      0.169      0.139E-01  0.110      0.184
+{SCF_istep: 6 , Vnl|psi>: 830 , wall_time: '  2.15 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     7
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3513E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  7  -92.382546241783    -8.020E-08 7.093E-10 9.325E-02 1.566E-05 2.906E-04
+ scprqt: <Vxc>= -1.4399312E-01 hartree
+ 
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.09     -0.394     -0.484     -0.125     -0.185E-01
+{SCF_istep: 7 , Vnl|psi>: 825 , wall_time: '  2.17 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     8
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3517E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  8  -92.382546406668    -1.649E-07 1.008E-09 6.639E-02 3.920E-05 3.298E-04
+ scprqt: <Vxc>= -1.4400262E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.504      0.845      0.670E-01 -0.238     -0.876E-01
+{SCF_istep: 8 , Vnl|psi>: 813 , wall_time: '  2.07 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER     9
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3518E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT  9  -92.382546406741    -7.320E-11 5.039E-10 6.252E-02 3.027E-06 3.267E-04
+ scprqt: <Vxc>= -1.4400433E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.18     -0.973     -0.481      0.305      0.896E-01
+{SCF_istep: 9 , Vnl|psi>: 825 , wall_time: '  2.12 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    10
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3516E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 10  -92.382546570225    -1.635E-07 3.907E-10 4.027E-02 5.852E-05 3.852E-04
+ scprqt: <Vxc>= -1.4401103E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.44      0.907      -1.05      -1.05      0.391
+{SCF_istep: 10 , Vnl|psi>: 825 , wall_time: '  2.16 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    11
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3515E-01  at reduced coord.    0.2667    0.5000    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 11  -92.382546637738    -6.751E-08 6.536E-10 2.506E-02 3.812E-05 4.233E-04
+ scprqt: <Vxc>= -1.4401741E-01 hartree
+ 
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.51     -0.859      0.142      0.298     -0.265
+{SCF_istep: 11 , Vnl|psi>: 822 , wall_time: '  2.15 [s] '} <<< TIME
+ 
+ ITER STEP NUMBER    12
+ Total charge density [el/Bohr^3]
+)     Maximum=    9.3514E-01  at reduced coord.    0.5000    0.7667    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+   Integrated=    2.6000E+01
+ ETOT 12  -92.382546641938    -4.200E-09 2.561E-10 2.142E-02 3.868E-06 4.272E-04
+ scprqt: <Vxc>= -1.4401854E-01 hartree
+ 
+ At SCF step   12, etot is converged : 
+  for the second time, diff in etot=  4.200E-09 < toldfe=  1.000E-07
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.999999E+01 Ha ,    8.163412E+02 eV
+ Evext_l    = :    -6.103534E+02 Ha ,   -1.660856E+04 eV
+ Evext_nl   = :     1.161404E+01 Ha ,    3.160340E+02 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     2.842409E+02 Ha ,    7.734589E+03 eV
+ Exc_ks     = :    -1.662017E+01 Ha ,   -4.522579E+02 eV
+ Enn        = :     2.079730E+02 Ha ,    5.659232E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -9.238255E+01 Ha ,   -2.513857E+03 eV
+ -------------------------------------------------------------------------------------------------
+ 
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)= -1.06907814E-05  sigma(3 2)= -7.07670442E-10
+  sigma(2 2)= -1.06912986E-05  sigma(3 1)= -3.33666188E-11
+  sigma(3 3)=  1.77416947E-05  sigma(2 1)=  1.56177190E-10
+ 
+ 
+ fftdatar_write: About to write data to: mos2o_DS1_TIM6_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS1_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.53894001
+    2        2.00000          3.97076443
+    3        2.00000          3.97076537
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631919303943E+00  1.71837815320353E+00  1.50181765502437E-06
+  2.97631845628128E+00 -1.71837683696484E+00 -2.96966981722052E+00
+  2.97631832856397E+00 -1.71837969536789E+00  2.96966831540287E+00
+ Reduced coordinates (xred)
+  3.33333444911236E-01  6.66666734419205E-01  3.97363837248487E-08
+  6.66666482986297E-01  3.33333448804067E-01 -7.85740792155366E-02
+  6.66666738769134E-01  3.33333150110062E-01  7.85740394791529E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 4.27206E-04 2.01210E-04 (free atoms)
+ -9.66717824709770E-08  1.81433441218603E-08 -7.51542840036408E-07
+  4.31389081863838E-08 -1.31258581901630E-07 -4.26454847095315E-04
+  5.35328742845932E-08  1.13115237779770E-07  4.27206389935351E-04
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+  3.81257420787982E-07  1.94194639203348E-07  2.84042028959979E-05
+ -8.05050865021506E-07  5.48260590268020E-07  1.61176573810353E-02
+  4.23793444233524E-07 -7.42455229471368E-07 -1.61460615839313E-02
+ Total energy (etotal) [Ha]= -9.23825466419382E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)=-7.47162E-06
+           Relative     =-8.08769E-08
+ 
+ At Broyd/MD step   6, gradients are converged : 
+  max grad (force/stress) = 4.2721E-04 < tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
 ================================================================================
  
  ----iterations are completed or convergence reached----
@@ -945,93 +2516,93 @@ message: |
  
  === Gap info ===
   >>>> For spin  1
-   Minimum direct gap =   1.8441 [eV], located at k-point      :   0.2500  0.2500  0.5000
-   Fundamental gap    =   1.5605 [eV], Top of valence bands at :   0.2500  0.2500  0.5000
+   Minimum direct gap =   2.7232 [eV], located at k-point      :   0.2500  0.5000  0.5000
+   Fundamental gap    =   2.2582 [eV], Top of valence bands at :   0.0000  0.0000  0.5000
                                        Bottom of conduction at :   0.0000  0.2500  0.5000
- Mean square residual over all n,k,spin=   97.573E-08; max=  11.567E-05
-   0.0000  0.0000  0.5000    1  1.15667E-04 kpt; spin; max resid(k); each band:
-  7.72E-11 8.45E-11 1.45E-11 1.38E-11 8.42E-10 7.83E-10 2.48E-09 9.46E-10
-  1.32E-09 4.44E-10 2.79E-09 2.52E-09 2.30E-09 1.16E-04
-   0.2500  0.0000  0.5000    1  5.29591E-09 kpt; spin; max resid(k); each band:
-  7.32E-11 6.90E-11 6.67E-11 2.34E-11 7.90E-10 7.14E-10 2.46E-09 2.53E-09
-  1.23E-09 7.10E-10 7.49E-10 1.49E-09 5.30E-09 3.41E-09
-   0.5000  0.0000  0.5000    1  2.04133E-05 kpt; spin; max resid(k); each band:
-  4.95E-11 1.23E-10 4.76E-11 3.82E-11 6.59E-10 6.68E-10 9.46E-10 5.92E-10
-  1.81E-09 2.08E-09 7.17E-10 2.06E-09 6.40E-10 2.04E-05
-   0.0000  0.2500  0.5000    1  5.49718E-09 kpt; spin; max resid(k); each band:
-  7.28E-11 6.79E-11 5.50E-11 2.03E-11 7.86E-10 7.11E-10 2.50E-09 2.43E-09
-  1.19E-09 7.30E-10 7.68E-10 1.52E-09 5.50E-09 3.52E-09
-   0.2500  0.2500  0.5000    1  2.58858E-08 kpt; spin; max resid(k); each band:
-  6.40E-11 8.94E-11 5.35E-11 5.00E-11 6.76E-10 6.46E-10 1.05E-09 8.17E-10
-  2.36E-09 1.66E-09 1.05E-09 1.59E-09 1.29E-09 2.59E-08
-   0.5000  0.2500  0.5000    1  1.53319E-07 kpt; spin; max resid(k); each band:
-  6.23E-11 9.59E-11 5.52E-11 4.07E-11 6.82E-10 6.54E-10 1.05E-09 7.91E-10
-  2.35E-09 1.72E-09 1.05E-09 1.54E-09 1.27E-09 1.53E-07
-  -0.2500  0.2500  0.5000    1  5.85900E-09 kpt; spin; max resid(k); each band:
-  7.38E-11 6.82E-11 6.78E-11 2.46E-11 7.89E-10 7.15E-10 2.45E-09 2.53E-09
-  1.23E-09 7.17E-10 7.83E-10 1.50E-09 5.86E-09 3.20E-09
-   0.0000  0.5000  0.5000    1  3.41007E-08 kpt; spin; max resid(k); each band:
-  6.09E-11 1.06E-10 4.59E-11 3.72E-11 6.46E-10 6.54E-10 1.04E-09 5.62E-10
-  1.86E-09 2.01E-09 7.06E-10 1.94E-09 1.25E-09 3.41E-08
-   0.2500  0.5000  0.5000    1  1.16861E-07 kpt; spin; max resid(k); each band:
-  6.41E-11 9.23E-11 5.44E-11 4.96E-11 6.74E-10 6.47E-10 1.06E-09 8.12E-10
-  2.36E-09 1.66E-09 1.05E-09 1.61E-09 1.28E-09 1.17E-07
-   0.5000  0.5000  0.5000    1  5.15696E-08 kpt; spin; max resid(k); each band:
-  7.64E-11 1.30E-10 4.78E-11 3.78E-11 6.61E-10 6.58E-10 1.07E-09 5.85E-10
-  1.79E-09 2.08E-09 7.33E-10 1.87E-09 1.30E-09 5.16E-08
+ Mean square residual over all n,k,spin=   90.729E-13; max=  25.609E-11
+   0.0000  0.0000  0.5000    1  1.04317E-11 kpt; spin; max resid(k); each band:
+  1.04E-12 1.16E-12 9.72E-14 8.72E-14 9.92E-13 1.21E-12 3.69E-12 1.34E-12
+  1.35E-12 2.15E-12 3.25E-12 3.90E-12 8.34E-12 1.04E-11
+   0.2500  0.0000  0.5000    1  1.73797E-11 kpt; spin; max resid(k); each band:
+  9.41E-13 8.11E-13 1.02E-12 2.60E-13 1.10E-12 1.20E-12 3.27E-12 2.26E-12
+  5.10E-12 9.79E-13 9.89E-12 1.35E-11 2.36E-12 1.74E-11
+   0.5000  0.0000  0.5000    1  2.08386E-11 kpt; spin; max resid(k); each band:
+  4.20E-13 1.50E-12 7.31E-13 4.83E-13 1.36E-12 9.96E-13 1.79E-12 1.14E-12
+  2.66E-12 7.86E-13 6.29E-12 1.13E-12 2.08E-11 5.16E-12
+   0.0000  0.2500  0.5000    1  1.75003E-11 kpt; spin; max resid(k); each band:
+  9.34E-13 8.28E-13 1.04E-12 2.42E-13 1.11E-12 1.20E-12 3.27E-12 2.33E-12
+  5.23E-12 1.03E-12 9.63E-12 1.35E-11 2.32E-12 1.75E-11
+   0.2500  0.2500  0.5000    1  2.51192E-10 kpt; spin; max resid(k); each band:
+  6.70E-13 1.18E-12 6.39E-13 8.53E-13 1.32E-12 1.06E-12 2.02E-12 7.08E-13
+  6.71E-12 2.74E-12 3.30E-12 7.41E-12 8.81E-12 2.51E-10
+   0.5000  0.2500  0.5000    1  2.56085E-10 kpt; spin; max resid(k); each band:
+  6.49E-13 1.17E-12 6.38E-13 8.52E-13 1.31E-12 1.05E-12 2.01E-12 7.02E-13
+  6.72E-12 2.72E-12 3.34E-12 7.45E-12 7.68E-12 2.56E-10
+  -0.2500  0.2500  0.5000    1  1.74885E-11 kpt; spin; max resid(k); each band:
+  9.33E-13 8.29E-13 1.03E-12 2.52E-13 1.11E-12 1.20E-12 3.27E-12 2.31E-12
+  5.20E-12 1.02E-12 9.69E-12 1.35E-11 2.33E-12 1.75E-11
+   0.0000  0.5000  0.5000    1  5.02235E-11 kpt; spin; max resid(k); each band:
+  5.06E-13 1.54E-12 7.50E-13 4.73E-13 1.41E-12 1.03E-12 1.90E-12 1.23E-12
+  2.54E-12 8.39E-13 6.44E-12 1.07E-12 2.06E-11 5.02E-11
+   0.2500  0.5000  0.5000    1  2.50820E-10 kpt; spin; max resid(k); each band:
+  7.31E-13 1.18E-12 6.24E-13 8.55E-13 1.34E-12 1.07E-12 2.07E-12 7.37E-13
+  6.70E-12 2.78E-12 3.21E-12 7.30E-12 9.79E-12 2.51E-10
+   0.5000  0.5000  0.5000    1  2.06948E-11 kpt; spin; max resid(k); each band:
+  4.89E-13 1.54E-12 7.45E-13 4.79E-13 1.40E-12 1.02E-12 1.88E-12 1.21E-12
+  2.57E-12 7.94E-13 6.40E-12 1.09E-12 2.07E-11 4.44E-12
  
    outwf: writing wavefunctions to: mos2o_DS1_WFK with iomode: IO_MODE_FORTRAN_MASTER
- WFK output , wall:  0.07 [s] , cpu:  0.03 [s] <<< TIME
+ WFK output , wall:  0.10 [s] , cpu:  0.03 [s] <<< TIME
  prteigrs : about to open file mos2o_DS1_EIG
- Fermi (or HOMO) energy (hartree) =  -0.07489   Average Vxc (hartree)=  -0.15049
+ Fermi (or HOMO) energy (hartree) =  -0.06421   Average Vxc (hartree)=  -0.14402
  Eigenvalues (hartree) for nkpt=  10  k points:
  kpt#   1, nband= 14, wtk=  0.06250, kpt=  0.0000  0.0000  0.5000 (reduced coord)
-  -2.30694   -1.35515   -1.34405   -1.34404   -0.56231   -0.53859   -0.25412   -0.15361
-  -0.11447   -0.11447   -0.09883   -0.07963   -0.07963    0.02385
+  -2.29637   -1.34628   -1.33736   -1.33736   -0.58132   -0.53377   -0.26937   -0.15398
+  -0.15398   -0.12948   -0.11274   -0.11274   -0.06421    0.04434
  kpt#   2, nband= 14, wtk=  0.12500, kpt=  0.2500  0.0000  0.5000 (reduced coord)
-  -2.30623   -1.35401   -1.35069   -1.34561   -0.53234   -0.51861   -0.21995   -0.18220
-  -0.17931   -0.12701   -0.11521   -0.10145   -0.08796   -0.01754
+  -2.29558   -1.34501   -1.34477   -1.33911   -0.54968   -0.52048   -0.24538   -0.20007
+  -0.19371   -0.15001   -0.12267   -0.11090   -0.08852    0.01878
  kpt#   3, nband= 14, wtk=  0.06250, kpt=  0.5000  0.0000  0.5000 (reduced coord)
-  -2.30552   -1.35720   -1.35284   -1.34716   -0.49241   -0.49134   -0.25817   -0.23536
-  -0.19437   -0.15264   -0.13983   -0.09376   -0.07510    0.02540
+  -2.29480   -1.35244   -1.34323   -1.34083   -0.50903   -0.50425   -0.27555   -0.23990
+  -0.21139   -0.17576   -0.13224   -0.09303   -0.08405    0.02684
  kpt#   4, nband= 14, wtk=  0.12500, kpt=  0.0000  0.2500  0.5000 (reduced coord)
-  -2.30623   -1.35401   -1.35070   -1.34561   -0.53234   -0.51861   -0.21995   -0.18220
-  -0.17931   -0.12701   -0.11521   -0.10145   -0.08796   -0.01754
+  -2.29558   -1.34501   -1.34477   -1.33911   -0.54968   -0.52048   -0.24538   -0.20007
+  -0.19371   -0.15001   -0.12267   -0.11089   -0.08852    0.01878
  kpt#   5, nband= 14, wtk=  0.12500, kpt=  0.2500  0.2500  0.5000 (reduced coord)
-  -2.30552   -1.35474   -1.35285   -1.34970   -0.49290   -0.49253   -0.22741   -0.21736
-  -0.18298   -0.17872   -0.15483   -0.13670   -0.07489   -0.00712
+  -2.29480   -1.34965   -1.34372   -1.34323   -0.51016   -0.50339   -0.25044   -0.24336
+  -0.19299   -0.18148   -0.16817   -0.12217   -0.07850    0.02158
  kpt#   6, nband= 14, wtk=  0.12500, kpt=  0.5000  0.2500  0.5000 (reduced coord)
-  -2.30552   -1.35474   -1.35285   -1.34970   -0.49290   -0.49253   -0.22741   -0.21736
-  -0.18298   -0.17872   -0.15483   -0.13670   -0.07489   -0.00712
+  -2.29480   -1.34965   -1.34372   -1.34323   -0.51016   -0.50339   -0.25044   -0.24336
+  -0.19299   -0.18148   -0.16817   -0.12217   -0.07850    0.02158
  kpt#   7, nband= 14, wtk=  0.12500, kpt= -0.2500  0.2500  0.5000 (reduced coord)
-  -2.30623   -1.35401   -1.35069   -1.34561   -0.53234   -0.51861   -0.21995   -0.18220
-  -0.17930   -0.12701   -0.11521   -0.10145   -0.08796   -0.01754
+  -2.29558   -1.34501   -1.34477   -1.33911   -0.54968   -0.52048   -0.24538   -0.20007
+  -0.19371   -0.15001   -0.12267   -0.11090   -0.08852    0.01878
  kpt#   8, nband= 14, wtk=  0.06250, kpt=  0.0000  0.5000  0.5000 (reduced coord)
-  -2.30552   -1.35720   -1.35284   -1.34716   -0.49241   -0.49134   -0.25817   -0.23536
-  -0.19437   -0.15264   -0.13983   -0.09376   -0.07510    0.02327
+  -2.29480   -1.35244   -1.34323   -1.34083   -0.50903   -0.50425   -0.27555   -0.23990
+  -0.21139   -0.17576   -0.13224   -0.09303   -0.08405    0.02684
  kpt#   9, nband= 14, wtk=  0.12500, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-  -2.30552   -1.35474   -1.35285   -1.34970   -0.49290   -0.49253   -0.22741   -0.21736
-  -0.18298   -0.17872   -0.15483   -0.13670   -0.07489   -0.00712
+  -2.29480   -1.34965   -1.34372   -1.34323   -0.51016   -0.50339   -0.25044   -0.24336
+  -0.19299   -0.18148   -0.16817   -0.12217   -0.07850    0.02158
  kpt#  10, nband= 14, wtk=  0.06250, kpt=  0.5000  0.5000  0.5000 (reduced coord)
-  -2.30552   -1.35720   -1.35284   -1.34716   -0.49241   -0.49134   -0.25817   -0.23536
-  -0.19437   -0.15264   -0.13983   -0.09376   -0.07510    0.02327
+  -2.29480   -1.35244   -1.34323   -1.34083   -0.50903   -0.50425   -0.27555   -0.23990
+  -0.21139   -0.17576   -0.13224   -0.09303   -0.08405    0.02684
  Total charge density [el/Bohr^3]
-)     Maximum=    9.2165E-01  at reduced coord.    0.2667    0.5000    0.0000
-)Next maximum=    9.2165E-01  at reduced coord.    0.2333    0.5000    0.0000
-)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
-)Next minimum=    0.0000E+00  at reduced coord.    0.7333    0.0667    0.3750
+)     Maximum=    9.3514E-01  at reduced coord.    0.5000    0.7667    0.0000
+)Next maximum=    9.3514E-01  at reduced coord.    0.5000    0.7333    0.0000
+)     Minimum=    0.0000E+00  at reduced coord.    0.0000    0.0000    0.3802
+)Next minimum=    0.0000E+00  at reduced coord.    0.2667    0.0000    0.3802
    Integrated=    2.6000E+01
  
  Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)=  9.14992992E-05  sigma(3 2)= -4.39054882E-09
-  sigma(2 2)=  9.14837461E-05  sigma(3 1)= -1.63875407E-09
-  sigma(3 3)=  4.15059646E-04  sigma(2 1)=  1.00151330E-08
+  sigma(1 1)= -1.06907814E-05  sigma(3 2)= -7.07670442E-10
+  sigma(2 2)= -1.06912986E-05  sigma(3 1)= -3.33666188E-11
+  sigma(3 3)=  1.77416947E-05  sigma(2 1)=  1.56177190E-10
  
--Cartesian components of stress tensor (GPa)         [Pressure= -5.8650E+00 GPa]
-- sigma(1 1)=  2.69200187E+00  sigma(3 2)= -1.29174384E-04
-- sigma(2 2)=  2.69154428E+00  sigma(3 1)= -4.82138012E-05
-- sigma(3 3)=  1.22114743E+01  sigma(2 1)=  2.94655336E-04
- dataset: 1 , wall: 45.21 [s] , cpu: 44.51 [s] <<< TIME
+-Cartesian components of stress tensor (GPa)         [Pressure=  3.5701E-02 GPa]
+- sigma(1 1)= -3.14533594E-01  sigma(3 2)= -2.08203797E-05
+- sigma(2 2)= -3.14548812E-01  sigma(3 1)= -9.81679653E-07
+- sigma(3 3)=  5.21978591E-01  sigma(2 1)=  4.59489079E-06
+ dataset: 1 , wall: 04:54 [minutes] , cpu: 04:43 [minutes] <<< TIME
  
 ================================================================================
 == DATASET  2 ==================================================================
@@ -1179,16 +2750,33 @@ message: |
      0.6666667   0.3333333   0.0919442      |     0.6666667   0.3333333   0.0919442
  hdr_check:  Density/Potential file is OK for restart of calculation
 ================================================================================
- read_rhor , wall:  0.00 [s] , cpu:  0.00 [s] <<< TIME
+ read_rhor , wall:  0.05 [s] , cpu:  0.00 [s] <<< TIME
  
 ================================================================================
+ 
+=== [ionmov= 2] Broyden-Fletcher-Goldfard-Shanno method (forces)            
+================================================================================
+ 
+--- Iteration: ( 1/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
  
  getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
          ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
  Max number of non-self-consistent loops: 20
  k-point: [ 1 / 68 ], spin: 1
-   Max resid = 3.53810E+00  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.06 [s] , wall-time:  0.06 [s]
-   Max resid = 9.23620E-02  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.06 [s] , wall-time:  0.06 [s]
+   Max resid = 3.53810E+00  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.08 [s] , wall-time:  0.40 [s]
+   Max resid = 9.23620E-02  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.07 [s] , wall-time:  0.07 [s]
    Max resid = 6.84171E-04  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.06 [s] , wall-time:  0.06 [s]
    Printing residuals every mod(20) iterations...
    NSCF loop completed after 13 iterations
@@ -1205,8 +2793,8 @@ message: |
  Etot       = :     1.738915E+02 Ha ,    4.731827E+03 eV
  -------------------------------------------------------------------------------------------------
  
- fftdatar_write: About to write data to: mos2o_DS2_DEN with iomode: IO_MODE_FORTRAN
- IO operation , wall:  0.03 [s] , cpu:  0.01 [s] <<< TIME
+ fftdatar_write: About to write data to: mos2o_DS2_TIM1_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
 - Creating HDf5 file with MPI-IO support: mos2o_DS2_GSR.nc
  Integrated electronic density in atomic spheres:
  ------------------------------------------------
@@ -1214,439 +2802,142 @@ message: |
     1        2.00000         10.42349198
     2        2.00000          3.79831482
     3        2.00000          3.79833192
-================================================================================
+ Write iteration in HIST netCDF file (also create it)
  
- ----iterations are completed or convergence reached----
+---OUTPUT-----------------------------------------------------------------------
  
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 1.00000+100 1.00000+100 (free atoms)
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+ Total energy (etotal) [Ha]= -9.23435497077835E+01
+ fconv : at Broyd/MD step   1, gradients have not converged yet. 
+  max grad (force/stress) = 1.0000+100 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
  
- === Gap info ===
-Not enough states to calculate the band gap.
- Mean square residual over all n,k,spin=   59.655E-14; max=  99.810E-14
-   0.0000  0.0000  0.0000    1  3.80058E-08 kpt; spin; max resid(k); each band:
-  3.94E-13 7.14E-13 2.93E-13 6.32E-13 6.02E-13 2.77E-13 2.56E-12 3.80E-08
-   0.0294  0.0000  0.0000    1  2.25900E-08 kpt; spin; max resid(k); each band:
-  5.18E-13 4.65E-13 6.97E-13 5.79E-13 7.45E-13 6.72E-13 7.52E-13 2.26E-08
-   0.0588  0.0000  0.0000    1  1.51049E-07 kpt; spin; max resid(k); each band:
-  3.26E-13 2.90E-13 7.48E-13 8.80E-13 7.21E-13 4.06E-13 7.77E-12 1.51E-07
-   0.0882  0.0000  0.0000    1  4.85624E-07 kpt; spin; max resid(k); each band:
-  3.14E-13 5.01E-13 2.74E-13 2.22E-13 9.18E-13 7.11E-13 9.23E-13 4.86E-07
-   0.1176  0.0000  0.0000    1  1.07023E-06 kpt; spin; max resid(k); each band:
-  4.79E-13 6.04E-13 8.86E-13 8.79E-13 7.03E-13 9.50E-13 2.78E-10 1.07E-06
-   0.1471  0.0000  0.0000    1  1.56170E-06 kpt; spin; max resid(k); each band:
-  7.39E-13 4.84E-13 7.53E-13 3.37E-13 9.49E-13 8.42E-13 1.98E-11 1.56E-06
-   0.1765  0.0000  0.0000    1  2.09227E-05 kpt; spin; max resid(k); each band:
-  5.85E-13 8.25E-13 9.86E-13 3.97E-13 5.86E-13 7.97E-13 1.85E-11 2.09E-05
-   0.2059  0.0000  0.0000    1  1.08264E-05 kpt; spin; max resid(k); each band:
-  3.38E-13 7.70E-13 4.77E-13 3.17E-13 5.41E-13 5.97E-13 4.92E-10 1.08E-05
-   0.2353  0.0000  0.0000    1  1.51059E-05 kpt; spin; max resid(k); each band:
-  5.60E-13 3.04E-13 7.10E-13 7.97E-13 6.08E-13 3.62E-13 8.79E-09 1.51E-05
-   0.2647  0.0000  0.0000    1  2.92601E-06 kpt; spin; max resid(k); each band:
-  7.18E-13 9.74E-13 2.95E-13 7.23E-13 5.35E-13 4.47E-13 1.56E-08 2.93E-06
-   0.2941  0.0000  0.0000    1  2.12689E-05 kpt; spin; max resid(k); each band:
-  6.09E-13 6.71E-13 3.21E-13 7.63E-13 8.86E-13 3.04E-13 1.46E-06 2.13E-05
-   0.3235  0.0000  0.0000    1  2.19604E-04 kpt; spin; max resid(k); each band:
-  6.50E-13 7.50E-13 2.26E-13 3.93E-13 2.95E-13 4.26E-13 5.13E-05 2.20E-04
-   0.3529  0.0000  0.0000    1  2.86504E-04 kpt; spin; max resid(k); each band:
-  8.93E-13 3.61E-13 3.54E-13 2.92E-13 4.95E-13 3.72E-13 5.26E-06 2.87E-04
-   0.3824  0.0000  0.0000    1  2.25191E-07 kpt; spin; max resid(k); each band:
-  6.57E-13 5.79E-13 2.97E-13 2.33E-13 9.69E-13 6.16E-13 2.78E-08 2.25E-07
-   0.4118  0.0000  0.0000    1  1.88913E-07 kpt; spin; max resid(k); each band:
-  6.85E-13 2.74E-13 7.53E-13 3.10E-13 7.35E-13 8.45E-13 1.21E-09 1.89E-07
-   0.4412  0.0000  0.0000    1  2.84763E-07 kpt; spin; max resid(k); each band:
-  6.23E-13 4.91E-13 5.74E-13 4.02E-13 5.07E-13 4.01E-13 2.32E-08 2.85E-07
-   0.4706  0.0000  0.0000    1  1.69016E-07 kpt; spin; max resid(k); each band:
-  5.80E-13 2.22E-13 6.62E-13 1.98E-13 7.76E-13 6.40E-13 7.23E-09 1.69E-07
-   0.5000  0.0000  0.0000    1  5.57043E-07 kpt; spin; max resid(k); each band:
-  3.82E-13 2.60E-13 2.41E-13 3.06E-13 3.18E-13 8.59E-13 3.44E-08 5.57E-07
-   0.4833  0.0333  0.0000    1  5.40333E-08 kpt; spin; max resid(k); each band:
-  7.26E-13 3.16E-13 6.47E-13 9.39E-13 5.88E-13 9.02E-13 5.16E-10 5.40E-08
-   0.4667  0.0667  0.0000    1  1.25913E-08 kpt; spin; max resid(k); each band:
-  8.81E-13 1.96E-13 8.26E-13 6.97E-13 3.71E-13 9.82E-13 2.45E-09 1.26E-08
-   0.4500  0.1000  0.0000    1  1.09130E-07 kpt; spin; max resid(k); each band:
-  5.85E-13 3.13E-13 3.55E-13 5.39E-13 9.71E-13 4.40E-13 1.09E-09 1.09E-07
-   0.4333  0.1333  0.0000    1  1.19353E-07 kpt; spin; max resid(k); each band:
-  7.25E-13 6.52E-13 3.23E-13 4.60E-13 7.29E-13 5.60E-13 2.62E-08 1.19E-07
-   0.4167  0.1667  0.0000    1  5.25514E-08 kpt; spin; max resid(k); each band:
-  8.82E-13 4.62E-13 7.17E-13 5.90E-13 9.79E-13 4.68E-13 3.36E-09 5.26E-08
-   0.4000  0.2000  0.0000    1  4.25631E-07 kpt; spin; max resid(k); each band:
-  7.53E-13 9.40E-13 6.73E-13 9.61E-13 7.59E-13 7.75E-13 2.05E-08 4.26E-07
-   0.3833  0.2333  0.0000    1  2.64459E-08 kpt; spin; max resid(k); each band:
-  3.71E-13 5.61E-13 4.31E-13 2.41E-13 9.13E-13 9.73E-13 2.64E-08 1.77E-08
-   0.3667  0.2667  0.0000    1  3.58711E-08 kpt; spin; max resid(k); each band:
-  6.66E-13 3.33E-13 9.51E-13 9.67E-13 9.60E-13 9.91E-13 3.59E-08 2.57E-08
-   0.3500  0.3000  0.0000    1  9.43920E-07 kpt; spin; max resid(k); each band:
-  6.93E-13 2.86E-13 4.77E-13 8.64E-13 4.39E-13 8.90E-13 1.47E-08 9.44E-07
-   0.3333  0.3333  0.0000    1  4.14261E-07 kpt; spin; max resid(k); each band:
-  7.15E-13 4.03E-13 3.80E-13 3.82E-13 8.71E-13 5.41E-13 1.33E-08 4.14E-07
-   0.3500  0.3500  0.0250    1  2.67881E-07 kpt; spin; max resid(k); each band:
-  8.59E-13 4.94E-13 2.92E-13 9.71E-13 5.96E-13 7.81E-13 1.75E-07 2.68E-07
-   0.3667  0.3667  0.0500    1  1.78473E-07 kpt; spin; max resid(k); each band:
-  5.04E-13 3.86E-13 9.74E-13 5.76E-13 9.25E-13 2.23E-13 3.53E-08 1.78E-07
-   0.3833  0.3833  0.0750    1  1.79060E-08 kpt; spin; max resid(k); each band:
-  3.88E-13 9.79E-13 2.12E-13 8.40E-13 8.17E-13 8.06E-13 7.66E-09 1.79E-08
-   0.4000  0.4000  0.1000    1  2.24129E-07 kpt; spin; max resid(k); each band:
-  3.19E-13 5.97E-13 5.20E-13 8.33E-13 5.17E-13 7.78E-13 8.65E-08 2.24E-07
-   0.4167  0.4167  0.1250    1  8.57013E-08 kpt; spin; max resid(k); each band:
-  8.73E-13 2.35E-13 4.08E-13 3.19E-13 8.07E-13 9.13E-13 1.10E-09 8.57E-08
-   0.4333  0.4333  0.1500    1  2.90755E-08 kpt; spin; max resid(k); each band:
-  8.03E-13 9.11E-13 5.95E-13 2.84E-13 5.10E-13 5.32E-13 1.61E-09 2.91E-08
-   0.4500  0.4500  0.1750    1  9.75989E-08 kpt; spin; max resid(k); each band:
-  6.46E-13 2.39E-13 8.97E-13 4.16E-13 6.77E-13 4.19E-13 1.93E-09 9.76E-08
-   0.4667  0.4667  0.2000    1  1.25550E-07 kpt; spin; max resid(k); each band:
-  7.47E-13 3.16E-13 7.12E-13 4.03E-13 6.51E-13 5.13E-13 9.16E-09 1.26E-07
-   0.4833  0.4833  0.2250    1  3.45431E-08 kpt; spin; max resid(k); each band:
-  7.37E-13 3.34E-13 1.99E-13 2.00E-13 6.36E-13 5.30E-13 1.44E-08 3.45E-08
-   0.5000  0.5000  0.2500    1  9.91785E-08 kpt; spin; max resid(k); each band:
-  6.43E-13 2.40E-13 4.38E-13 8.89E-13 9.79E-13 6.30E-13 2.56E-09 9.92E-08
-   0.5167  0.5167  0.2750    1  2.00533E-07 kpt; spin; max resid(k); each band:
-  5.46E-13 2.62E-13 6.36E-13 3.04E-13 8.62E-13 5.02E-13 1.15E-08 2.01E-07
-   0.5333  0.5333  0.3000    1  2.91597E-07 kpt; spin; max resid(k); each band:
-  8.86E-13 5.56E-13 2.41E-13 4.62E-13 7.12E-13 7.42E-13 9.06E-09 2.92E-07
-   0.5500  0.5500  0.3250    1  1.48734E-07 kpt; spin; max resid(k); each band:
-  9.28E-13 1.93E-13 2.33E-13 8.95E-13 5.48E-13 5.46E-13 3.82E-09 1.49E-07
-   0.5667  0.5667  0.3500    1  1.34823E-08 kpt; spin; max resid(k); each band:
-  7.46E-13 4.08E-13 8.89E-13 5.30E-13 8.14E-13 4.98E-13 5.45E-10 1.35E-08
-   0.5833  0.5833  0.3750    1  3.43987E-08 kpt; spin; max resid(k); each band:
-  3.74E-13 4.00E-13 9.66E-13 8.28E-13 6.19E-13 7.65E-13 1.15E-08 3.44E-08
-   0.6000  0.6000  0.4000    1  1.90890E-08 kpt; spin; max resid(k); each band:
-  9.45E-13 2.46E-13 5.56E-13 6.71E-13 8.69E-13 9.23E-13 1.91E-08 5.11E-09
-   0.6167  0.6167  0.4250    1  1.00188E-07 kpt; spin; max resid(k); each band:
-  4.71E-13 4.61E-13 5.78E-13 2.70E-13 4.20E-13 8.82E-13 1.00E-07 5.16E-08
-   0.6333  0.6333  0.4500    1  2.01940E-08 kpt; spin; max resid(k); each band:
-  3.72E-13 4.11E-13 6.27E-13 9.86E-13 5.70E-13 9.40E-13 8.26E-09 2.02E-08
-   0.6500  0.6500  0.4750    1  5.59850E-07 kpt; spin; max resid(k); each band:
-  7.04E-13 6.81E-13 6.23E-13 4.01E-13 2.06E-13 6.44E-13 1.54E-08 5.60E-07
-   0.6667  0.6667  0.5000    1  8.84191E-08 kpt; spin; max resid(k); each band:
-  6.32E-13 2.43E-13 2.63E-13 6.81E-13 8.82E-13 7.76E-13 8.84E-08 7.46E-08
-   0.6833  0.6833  0.5250    1  1.34577E-06 kpt; spin; max resid(k); each band:
-  7.33E-13 3.11E-13 7.85E-13 3.38E-13 8.71E-13 7.17E-13 1.22E-07 1.35E-06
-   0.7000  0.7000  0.5500    1  9.10771E-08 kpt; spin; max resid(k); each band:
-  7.88E-13 8.39E-13 6.53E-13 7.58E-13 6.00E-13 4.92E-13 3.44E-08 9.11E-08
- outwf : prtvol=0 or 1, do not print more k-points.
+Inverse hessian has been initialized.
+ EXIT:           1           1
+ {mover_itime: 1 , wall_time: ' 01:09 [minutes] '} <<< TIME
  
+--- Iteration: ( 2/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
  
-   outwf: writing wavefunctions to: mos2o_DS2_WFK with iomode: IO_MODE_FORTRAN_MASTER
- WFK output , wall:  0.17 [s] , cpu:  0.11 [s] <<< TIME
- prteigrs : about to open file mos2o_DS2_EIG
- Eigenvalues (   eV  ) for nkpt=  68  k points:
- kpt#   1, nband=  8, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
- -62.34120  -36.44570  -36.13855  -36.13853  -14.92852  -14.29180   -6.53516   -3.84210
- kpt#   2, nband=  8, wtk=  1.00000, kpt=  0.0294  0.0000  0.0000 (reduced coord)
- -62.34090  -36.44512  -36.14186  -36.13934  -14.91610  -14.28343   -6.51796   -3.85233
- kpt#   3, nband=  8, wtk=  1.00000, kpt=  0.0588  0.0000  0.0000 (reduced coord)
- -62.33989  -36.44333  -36.15104  -36.14148  -14.87900  -14.25844   -6.46694   -3.88271
- kpt#   4, nband=  8, wtk=  1.00000, kpt=  0.0882  0.0000  0.0000 (reduced coord)
- -62.33826  -36.44059  -36.16585  -36.14495  -14.81779  -14.21722   -6.38387   -3.93249
- kpt#   5, nband=  8, wtk=  1.00000, kpt=  0.1176  0.0000  0.0000 (reduced coord)
- -62.33602  -36.43691  -36.18544  -36.14960  -14.73341  -14.16041   -6.27184   -4.00105
- kpt#   6, nband=  8, wtk=  1.00000, kpt=  0.1471  0.0000  0.0000 (reduced coord)
- -62.33342  -36.43277  -36.21047  -36.15539  -14.62720  -14.08895   -6.13567   -4.08869
- kpt#   7, nband=  8, wtk=  1.00000, kpt=  0.1765  0.0000  0.0000 (reduced coord)
- -62.33033  -36.42760  -36.23855  -36.16201  -14.50093  -14.00410   -5.98225   -4.19502
- kpt#   8, nband=  8, wtk=  1.00000, kpt=  0.2059  0.0000  0.0000 (reduced coord)
- -62.32703  -36.42225  -36.26990  -36.16931  -14.35692  -13.90754   -5.82179   -4.32855
- kpt#   9, nband=  8, wtk=  1.00000, kpt=  0.2353  0.0000  0.0000 (reduced coord)
- -62.32356  -36.41664  -36.30286  -36.17693  -14.19803  -13.80138   -5.67004   -4.48641
- kpt#  10, nband=  8, wtk=  1.00000, kpt=  0.2647  0.0000  0.0000 (reduced coord)
- -62.32000  -36.41081  -36.33598  -36.18479  -14.02782  -13.68823   -5.55510   -4.68182
- kpt#  11, nband=  8, wtk=  1.00000, kpt=  0.2941  0.0000  0.0000 (reduced coord)
- -62.31645  -36.40515  -36.36796  -36.19232  -13.85071  -13.57134   -5.53364   -4.89071
- kpt#  12, nband=  8, wtk=  1.00000, kpt=  0.3235  0.0000  0.0000 (reduced coord)
- -62.31309  -36.39961  -36.39828  -36.19961  -13.67214  -13.45455   -5.65925   -4.96816
- kpt#  13, nband=  8, wtk=  1.00000, kpt=  0.3529  0.0000  0.0000 (reduced coord)
- -62.31008  -36.42616  -36.39472  -36.20627  -13.49871  -13.34238   -5.88689   -5.34409
- kpt#  14, nband=  8, wtk=  1.00000, kpt=  0.3824  0.0000  0.0000 (reduced coord)
- -62.30747  -36.45027  -36.39045  -36.21213  -13.33818  -13.23988   -6.12543   -5.59116
- kpt#  15, nband=  8, wtk=  1.00000, kpt=  0.4118  0.0000  0.0000 (reduced coord)
- -62.30529  -36.46996  -36.38672  -36.21662  -13.19932  -13.15243   -6.33797   -5.77502
- kpt#  16, nband=  8, wtk=  1.00000, kpt=  0.4412  0.0000  0.0000 (reduced coord)
- -62.30372  -36.48454  -36.38403  -36.22019  -13.09133  -13.08523   -6.50367   -5.91500
- kpt#  17, nband=  8, wtk=  1.00000, kpt=  0.4706  0.0000  0.0000 (reduced coord)
- -62.30272  -36.49341  -36.38221  -36.22231  -13.04292  -13.02241   -6.60879   -6.00255
- kpt#  18, nband=  8, wtk=  1.00000, kpt=  0.5000  0.0000  0.0000 (reduced coord)
- -62.30235  -36.49620  -36.38154  -36.22286  -13.02842  -12.99873   -6.64481   -6.03232
- kpt#  19, nband=  8, wtk=  1.00000, kpt=  0.4833  0.0333  0.0000 (reduced coord)
- -62.30229  -36.49512  -36.38156  -36.22557  -13.02393  -12.99301   -6.62964   -6.02714
- kpt#  20, nband=  8, wtk=  1.00000, kpt=  0.4667  0.0667  0.0000 (reduced coord)
- -62.30205  -36.49148  -36.38120  -36.23342  -13.01075  -12.97617   -6.58443   -6.01213
- kpt#  21, nband=  8, wtk=  1.00000, kpt=  0.4500  0.1000  0.0000 (reduced coord)
- -62.30156  -36.48538  -36.38037  -36.24542  -12.98971  -12.94922   -6.51017   -5.98915
- kpt#  22, nband=  8, wtk=  1.00000, kpt=  0.4333  0.1333  0.0000 (reduced coord)
- -62.30089  -36.47695  -36.37937  -36.26104  -12.96226  -12.91386   -6.40846   -5.96140
- kpt#  23, nband=  8, wtk=  1.00000, kpt=  0.4167  0.1667  0.0000 (reduced coord)
- -62.30020  -36.46653  -36.37829  -36.28021  -12.93040  -12.87254   -6.28161   -5.93354
- kpt#  24, nband=  8, wtk=  1.00000, kpt=  0.4000  0.2000  0.0000 (reduced coord)
- -62.29946  -36.45413  -36.37716  -36.30147  -12.89670  -12.82841   -6.13276   -5.91112
- kpt#  25, nband=  8, wtk=  1.00000, kpt=  0.3833  0.2333  0.0000 (reduced coord)
- -62.29871  -36.44004  -36.37579  -36.32368  -12.86425  -12.78541   -5.96672   -5.89923
- kpt#  26, nband=  8, wtk=  1.00000, kpt=  0.3667  0.2667  0.0000 (reduced coord)
- -62.29807  -36.42453  -36.37476  -36.34571  -12.83655  -12.74816   -5.89946   -5.79260
- kpt#  27, nband=  8, wtk=  1.00000, kpt=  0.3500  0.3000  0.0000 (reduced coord)
- -62.29773  -36.40857  -36.37432  -36.36684  -12.81731  -12.72185   -5.90742   -5.63417
- kpt#  28, nband=  8, wtk=  1.00000, kpt=  0.3333  0.3333  0.0000 (reduced coord)
- -62.29757  -36.39757  -36.37946  -36.37409  -12.81015  -12.71190   -5.91289   -5.55978
- kpt#  29, nband=  8, wtk=  1.00000, kpt=  0.3500  0.3500  0.0250 (reduced coord)
- -62.29772  -36.40856  -36.37423  -36.36680  -12.81731  -12.72185   -5.90741   -5.63419
- kpt#  30, nband=  8, wtk=  1.00000, kpt=  0.3667  0.3667  0.0500 (reduced coord)
- -62.29807  -36.42450  -36.37477  -36.34568  -12.83655  -12.74816   -5.89946   -5.79260
- kpt#  31, nband=  8, wtk=  1.00000, kpt=  0.3833  0.3833  0.0750 (reduced coord)
- -62.29874  -36.44010  -36.37591  -36.32372  -12.86425  -12.78541   -5.96673   -5.89923
- kpt#  32, nband=  8, wtk=  1.00000, kpt=  0.4000  0.4000  0.1000 (reduced coord)
- -62.29945  -36.45413  -36.37704  -36.30142  -12.89670  -12.82841   -6.13276   -5.91112
- kpt#  33, nband=  8, wtk=  1.00000, kpt=  0.4167  0.4167  0.1250 (reduced coord)
- -62.30021  -36.46658  -36.37838  -36.28015  -12.93040  -12.87254   -6.28161   -5.93354
- kpt#  34, nband=  8, wtk=  1.00000, kpt=  0.4333  0.4333  0.1500 (reduced coord)
- -62.30091  -36.47699  -36.37952  -36.26105  -12.96226  -12.91386   -6.40846   -5.96142
- kpt#  35, nband=  8, wtk=  1.00000, kpt=  0.4500  0.4500  0.1750 (reduced coord)
- -62.30157  -36.48544  -36.38050  -36.24533  -12.98971  -12.94922   -6.51017   -5.98915
- kpt#  36, nband=  8, wtk=  1.00000, kpt=  0.4667  0.4667  0.2000 (reduced coord)
- -62.30202  -36.49145  -36.38109  -36.23331  -13.01075  -12.97616   -6.58443   -6.01213
- kpt#  37, nband=  8, wtk=  1.00000, kpt=  0.4833  0.4833  0.2250 (reduced coord)
- -62.30232  -36.49516  -36.38180  -36.22559  -13.02394  -12.99301   -6.62964   -6.02715
- kpt#  38, nband=  8, wtk=  1.00000, kpt=  0.5000  0.5000  0.2500 (reduced coord)
- -62.30247  -36.49648  -36.38214  -36.22320  -13.02843  -12.99873   -6.64482   -6.03236
- kpt#  39, nband=  8, wtk=  1.00000, kpt=  0.5167  0.5167  0.2750 (reduced coord)
- -62.30233  -36.49520  -36.38190  -36.22556  -13.02394  -12.99301   -6.62964   -6.02715
- kpt#  40, nband=  8, wtk=  1.00000, kpt=  0.5333  0.5333  0.3000 (reduced coord)
- -62.30205  -36.49154  -36.38132  -36.23331  -13.01075  -12.97617   -6.58443   -6.01213
- kpt#  41, nband=  8, wtk=  1.00000, kpt=  0.5500  0.5500  0.3250 (reduced coord)
- -62.30155  -36.48541  -36.38044  -36.24529  -12.98971  -12.94922   -6.51017   -5.98915
- kpt#  42, nband=  8, wtk=  1.00000, kpt=  0.5667  0.5667  0.3500 (reduced coord)
- -62.30091  -36.47696  -36.37946  -36.26109  -12.96226  -12.91386   -6.40846   -5.96141
- kpt#  43, nband=  8, wtk=  1.00000, kpt=  0.5833  0.5833  0.3750 (reduced coord)
- -62.30019  -36.46654  -36.37827  -36.28014  -12.93040  -12.87254   -6.28161   -5.93354
- kpt#  44, nband=  8, wtk=  1.00000, kpt=  0.6000  0.6000  0.4000 (reduced coord)
- -62.29941  -36.45405  -36.37684  -36.30130  -12.89670  -12.82841   -6.13276   -5.91112
- kpt#  45, nband=  8, wtk=  1.00000, kpt=  0.6167  0.6167  0.4250 (reduced coord)
- -62.29873  -36.44006  -36.37589  -36.32373  -12.86425  -12.78541   -5.96672   -5.89922
- kpt#  46, nband=  8, wtk=  1.00000, kpt=  0.6333  0.6333  0.4500 (reduced coord)
- -62.29815  -36.42473  -36.37497  -36.34604  -12.83655  -12.74816   -5.89947   -5.79262
- kpt#  47, nband=  8, wtk=  1.00000, kpt=  0.6500  0.6500  0.4750 (reduced coord)
- -62.29771  -36.40855  -36.37419  -36.36674  -12.81731  -12.72185   -5.90742   -5.63419
- kpt#  48, nband=  8, wtk=  1.00000, kpt=  0.6667  0.6667  0.5000 (reduced coord)
- -62.29751  -36.39743  -36.37932  -36.37372  -12.81014  -12.71189   -5.91288   -5.55981
- kpt#  49, nband=  8, wtk=  1.00000, kpt=  0.6833  0.6833  0.5250 (reduced coord)
- -62.29773  -36.40753  -36.37422  -36.36761  -12.81825  -12.72346   -5.90317   -5.62316
- kpt#  50, nband=  8, wtk=  1.00000, kpt=  0.7000  0.7000  0.5500 (reduced coord)
- -62.29831  -36.41971  -36.37526  -36.34949  -12.84399  -12.76073   -5.86670   -5.72985
- kpt#  51, nband=  8, wtk=  1.00000, kpt=  0.7167  0.7167  0.5750 (reduced coord)
- -62.29922  -36.42774  -36.37670  -36.33033  -12.88854  -12.82627   -5.80719   -5.79497
- kpt#  52, nband=  8, wtk=  1.00000, kpt=  0.7333  0.7333  0.6000 (reduced coord)
- -62.30059  -36.43105  -36.37907  -36.31107  -12.95178  -12.92045   -5.83347   -5.68323
- kpt#  53, nband=  8, wtk=  1.00000, kpt=  0.7500  0.7500  0.6250 (reduced coord)
- -62.30240  -36.42928  -36.38199  -36.29217  -13.04140  -13.03223   -5.80445   -5.53025
- kpt#  54, nband=  8, wtk=  1.00000, kpt=  0.7667  0.7667  0.6500 (reduced coord)
- -62.30468  -36.42233  -36.38569  -36.27397  -13.18515  -13.12748   -5.72358   -5.33845
- kpt#  55, nband=  8, wtk=  1.00000, kpt=  0.7833  0.7833  0.6750 (reduced coord)
- -62.30731  -36.41014  -36.38998  -36.25626  -13.34657  -13.23424   -5.60048   -5.11446
- kpt#  56, nband=  8, wtk=  1.00000, kpt=  0.8000  0.8000  0.7000 (reduced coord)
- -62.31027  -36.39477  -36.39305  -36.23953  -13.51981  -13.34890   -5.45662   -4.85351
- kpt#  57, nband=  8, wtk=  1.00000, kpt=  0.8167  0.8167  0.7250 (reduced coord)
- -62.31352  -36.40012  -36.37175  -36.22381  -13.69904  -13.46779   -5.34997   -4.83335
- kpt#  58, nband=  8, wtk=  1.00000, kpt=  0.8333  0.8333  0.7500 (reduced coord)
- -62.31692  -36.40571  -36.34671  -36.20909  -13.87880  -13.58740   -5.37270   -4.72488
- kpt#  59, nband=  8, wtk=  1.00000, kpt=  0.8500  0.8500  0.7750 (reduced coord)
- -62.32047  -36.41152  -36.31942  -36.19576  -14.05424  -13.70448   -5.49686   -4.49910
- kpt#  60, nband=  8, wtk=  1.00000, kpt=  0.8667  0.8667  0.8000 (reduced coord)
- -62.32402  -36.41744  -36.29059  -36.18368  -14.22116  -13.81618   -5.65817   -4.28153
- kpt#  61, nband=  8, wtk=  1.00000, kpt=  0.8833  0.8833  0.8250 (reduced coord)
- -62.32746  -36.42306  -36.26129  -36.17306  -14.37596  -13.92002   -5.82857   -4.24682
- kpt#  62, nband=  8, wtk=  1.00000, kpt=  0.9000  0.9000  0.8500 (reduced coord)
- -62.33072  -36.42845  -36.23303  -36.16379  -14.51567  -14.01390   -5.99457   -4.15386
- kpt#  63, nband=  8, wtk=  1.00000, kpt=  0.9167  0.9167  0.8750 (reduced coord)
- -62.33369  -36.43325  -36.20680  -36.15610  -14.63783  -14.09606   -6.14741   -4.06912
- kpt#  64, nband=  8, wtk=  1.00000, kpt=  0.9333  0.9333  0.9000 (reduced coord)
- -62.33626  -36.43743  -36.18346  -36.14992  -14.74040  -14.16511   -6.28060   -3.99247
- kpt#  65, nband=  8, wtk=  1.00000, kpt=  0.9500  0.9500  0.9250 (reduced coord)
- -62.33837  -36.44075  -36.16457  -36.14501  -14.82181  -14.21992   -6.38919   -3.92869
- kpt#  66, nband=  8, wtk=  1.00000, kpt=  0.9667  0.9667  0.9500 (reduced coord)
- -62.33997  -36.44354  -36.15053  -36.14159  -14.88081  -14.25966   -6.46941   -3.88119
- kpt#  67, nband=  8, wtk=  1.00000, kpt=  0.9833  0.9833  0.9750 (reduced coord)
- -62.34091  -36.44520  -36.14167  -36.13932  -14.91655  -14.28374   -6.51859   -3.85195
- kpt#  68, nband=  8, wtk=  1.00000, kpt=  1.0000  1.0000  1.0000 (reduced coord)
- -62.34120  -36.44570  -36.13855  -36.13853  -14.92852  -14.29180   -6.53516   -3.84207
- Total charge density [el/Bohr^3]
-)     Maximum=    9.2165E-01  at reduced coord.    0.2667    0.5000    0.0000
-)Next maximum=    9.2165E-01  at reduced coord.    0.2333    0.5000    0.0000
-)     Minimum=    0.0000E+00  at reduced coord.    0.3333    0.0667    0.3750
-)Next minimum=    0.0000E+00  at reduced coord.    0.7333    0.0667    0.3750
-   Integrated=    2.6000E+01
- dataset: 2 , wall: 01:06 [minutes] , cpu: 01:06 [minutes] <<< TIME
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
  
-== END DATASET(S) ==============================================================
-================================================================================
-  
- -outvars: echo values of variables after computation  --------
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
  
- These variables are accessible in NetCDF format (mos2o_OUT.nc)
-
-            acell      5.9526373186E+00  5.9526373186E+00  3.7794522658E+01 Bohr
-              amu      9.59400000E+01  3.20660000E+01
-      chksymbreak           0
-             ecut      3.00000000E+01 Hartree
-           enunit1          0
-           enunit2          1
-           etotal1    -9.2343549708E+01
-            fcart1    -9.2507796928E-07 -6.9115148629E-07 -8.7608945754E-06
-                       2.7790717980E-07  1.8150041254E-06  6.9218122615E-02
-                       6.4717078948E-07 -1.1238526391E-06 -6.9209361720E-02
--          fftalg         512
-           getden1          0
-           getden2         -1
-             iscf1          7
-             iscf2         -2
-           istwfk1       4    0    5    0    0    0    0    8    0    9
-           istwfk2       2    0    0    0    0    0    0    0    0    0
-                         0    0    0    0    0    0    0    3    0    0
-                         0    0    0    0    0    0    0    0    0    0
-                         0    0    0    0    0    0    0    0    0    0
-                         0    0    0    0    0    0    0    0    0    0
-                       outvar_i_n : Printing only first  50 k-points.
-              ixc          11
-           jdtset        1    2
-              kpt1     0.00000000E+00  0.00000000E+00  5.00000000E-01
-                       2.50000000E-01  0.00000000E+00  5.00000000E-01
-                       5.00000000E-01  0.00000000E+00  5.00000000E-01
-                       0.00000000E+00  2.50000000E-01  5.00000000E-01
-                       2.50000000E-01  2.50000000E-01  5.00000000E-01
-                       5.00000000E-01  2.50000000E-01  5.00000000E-01
-                      -2.50000000E-01  2.50000000E-01  5.00000000E-01
-                       0.00000000E+00  5.00000000E-01  5.00000000E-01
-                       2.50000000E-01  5.00000000E-01  5.00000000E-01
-                       5.00000000E-01  5.00000000E-01  5.00000000E-01
-              kpt2     0.00000000E+00  0.00000000E+00  0.00000000E+00
-                       2.94117647E-02  0.00000000E+00  0.00000000E+00
-                       5.88235294E-02  0.00000000E+00  0.00000000E+00
-                       8.82352941E-02  0.00000000E+00  0.00000000E+00
-                       1.17647059E-01  0.00000000E+00  0.00000000E+00
-                       1.47058824E-01  0.00000000E+00  0.00000000E+00
-                       1.76470588E-01  0.00000000E+00  0.00000000E+00
-                       2.05882353E-01  0.00000000E+00  0.00000000E+00
-                       2.35294118E-01  0.00000000E+00  0.00000000E+00
-                       2.64705882E-01  0.00000000E+00  0.00000000E+00
-                       2.94117647E-01  0.00000000E+00  0.00000000E+00
-                       3.23529412E-01  0.00000000E+00  0.00000000E+00
-                       3.52941176E-01  0.00000000E+00  0.00000000E+00
-                       3.82352941E-01  0.00000000E+00  0.00000000E+00
-                       4.11764706E-01  0.00000000E+00  0.00000000E+00
-                       4.41176471E-01  0.00000000E+00  0.00000000E+00
-                       4.70588235E-01  0.00000000E+00  0.00000000E+00
-                       5.00000000E-01  0.00000000E+00  0.00000000E+00
-                       4.83333333E-01  3.33333333E-02  0.00000000E+00
-                       4.66666667E-01  6.66666667E-02  0.00000000E+00
-                       4.50000000E-01  1.00000000E-01  0.00000000E+00
-                       4.33333333E-01  1.33333333E-01  0.00000000E+00
-                       4.16666667E-01  1.66666667E-01  0.00000000E+00
-                       4.00000000E-01  2.00000000E-01  0.00000000E+00
-                       3.83333333E-01  2.33333333E-01  0.00000000E+00
-                       3.66666667E-01  2.66666667E-01  0.00000000E+00
-                       3.50000000E-01  3.00000000E-01  0.00000000E+00
-                       3.33333333E-01  3.33333333E-01  0.00000000E+00
-                       3.50000000E-01  3.50000000E-01  2.50000000E-02
-                       3.66666667E-01  3.66666667E-01  5.00000000E-02
-                       3.83333333E-01  3.83333333E-01  7.50000000E-02
-                       4.00000000E-01  4.00000000E-01  1.00000000E-01
-                       4.16666667E-01  4.16666667E-01  1.25000000E-01
-                       4.33333333E-01  4.33333333E-01  1.50000000E-01
-                       4.50000000E-01  4.50000000E-01  1.75000000E-01
-                       4.66666667E-01  4.66666667E-01  2.00000000E-01
-                       4.83333333E-01  4.83333333E-01  2.25000000E-01
-                       5.00000000E-01  5.00000000E-01  2.50000000E-01
-                       5.16666667E-01  5.16666667E-01  2.75000000E-01
-                       5.33333333E-01  5.33333333E-01  3.00000000E-01
-                       5.50000000E-01  5.50000000E-01  3.25000000E-01
-                       5.66666667E-01  5.66666667E-01  3.50000000E-01
-                       5.83333333E-01  5.83333333E-01  3.75000000E-01
-                       6.00000000E-01  6.00000000E-01  4.00000000E-01
-                       6.16666667E-01  6.16666667E-01  4.25000000E-01
-                       6.33333333E-01  6.33333333E-01  4.50000000E-01
-                       6.50000000E-01  6.50000000E-01  4.75000000E-01
-                       6.66666667E-01  6.66666667E-01  5.00000000E-01
-                       6.83333333E-01  6.83333333E-01  5.25000000E-01
-                       7.00000000E-01  7.00000000E-01  5.50000000E-01
-                       outvar_i_n : Printing only first  50 k-points.
-           kptopt1          1
-           kptopt2         -3
-         kptrlatt        4    0    0      0    4    0      0    0    1
-          kptrlen1     2.38105493E+01
-          kptrlen2     3.00000000E+01
-P           mkmem1         10
-P           mkmem2         68
-            natom           3
-            nband1         14
-            nband2          8
-           nbdbuf1          0
-           nbdbuf2          2
-           ndtset           2
-           ndivsm1          0
-           ndivsm2         10
-            ngfft          30      30     192
-             nkpt1         10
-             nkpt2         68
-            nstep          20
-             nsym           1
-           ntypat           2
-              occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
-                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
-                       2.000000  0.000000
-            rprim      5.0000000000E-01 -8.6602540378E-01  0.0000000000E+00
-                       5.0000000000E-01  8.6602540378E-01  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
-           shiftk1     0.00000000E+00  0.00000000E+00  5.00000000E-01
-           shiftk2     5.00000000E-01  5.00000000E-01  5.00000000E-01
-          spgroup           1
-           strten1     9.1499299198E-05  9.1483746092E-05  4.1505964600E-04
-                      -4.3905488224E-09 -1.6387540690E-09  1.0015133005E-08
-           toldfe1     1.00000000E-07 Hartree
-           toldfe2     0.00000000E+00 Hartree
-           tolwfr1     0.00000000E+00
-           tolwfr2     1.00000000E-12
-            typat      1  2  2
-              wtk1       0.06250    0.12500    0.06250    0.12500    0.12500    0.12500
-                         0.12500    0.06250    0.12500    0.06250
-              wtk2       1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
-                         1.00000    1.00000
-                       outvars : Printing only first  50 k-points.
-           xangst      1.5750000000E+00  9.0932667397E-01  0.0000000000E+00
-                       1.5750000000E+00 -9.0932667397E-01 -1.8388847000E+00
-                       1.5750000000E+00 -9.0932667397E-01  1.8388847000E+00
-            xcart      2.9763186593E+00  1.7183783791E+00  0.0000000000E+00
-                       2.9763186593E+00 -1.7183783791E+00 -3.4749884730E+00
-                       2.9763186593E+00 -1.7183783791E+00  3.4749884730E+00
-             xred      3.3333333333E-01  6.6666666667E-01  0.0000000000E+00
-                       6.6666666667E-01  3.3333333333E-01 -9.1944235000E-02
-                       6.6666666667E-01  3.3333333333E-01  9.1944235000E-02
-            znucl       42.00000   16.00000
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+ Max number of non-self-consistent loops: 20
+ k-point: [ 1 / 68 ], spin: 1
+   Max resid = 7.13793E-13  (exclude nbdbuf bands). One NSCF iteration cpu-time:  0.02 [s] , wall-time:  0.02 [s]
+   NSCF loop completed after 1 iterations
  
-================================================================================
-  
- Proc.   0 individual time (sec): cpu=        110.7  wall=        112.4
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     0.000000E+00 Ha ,    0.000000E+00 eV
+ Evext_l    = :     0.000000E+00 Ha ,    0.000000E+00 eV
+ Evext_nl   = :     0.000000E+00 Ha ,    0.000000E+00 eV
+ Epsp_core  = :     7.631172E-01 Ha ,    2.076547E+01 eV
+ Ehartree   = :     0.000000E+00 Ha ,    0.000000E+00 eV
+ Exc_ks     = :    -1.644486E+01 Ha ,   -4.474874E+02 eV
+ Enn        = :     1.895732E+02 Ha ,    5.158549E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :     1.738915E+02 Ha ,    4.731827E+03 eV
+ -------------------------------------------------------------------------------------------------
  
- Calculation completed.
-.Delivered   4 WARNINGs and  10 COMMENTs to log file.
-
---- !FinalSummary
-program: abinit
-version: 9.10.3
-start_datetime: Wed May 07 08:47:25 2025
-end_datetime: Wed May 07 08:49:18 2025
-overall_cpu_time:         110.7
-overall_wall_time:         112.4
-exit_requested_by_user: no 
-timelimit: 0
-pseudos: 
-    Mo  : 228091cb5782e08cb8d68936b3c7e57b
-    S   : ee4b2e2802f5df21cf2ecc26b1029f69
-usepaw: 0
-mpi_procs: 1
-omp_threads: 1
-num_warnings: 4
-num_comments: 10
-...
+ fftdatar_write: About to write data to: mos2o_DS2_TIM2_DEN with iomode: IO_MODE_FORTRAN
+ IO operation , wall:  0.01 [s] , cpu:  0.00 [s] <<< TIME
+- Creating HDf5 file with MPI-IO support: mos2o_DS2_GSR.nc
+ Integrated electronic density in atomic spheres:
+ ------------------------------------------------
+ Atom  Sphere_radius  Integrated_density
+    1        2.00000         10.42349198
+    2        2.00000          3.79831482
+    3        2.00000          3.79833192
+ Write iteration in HIST netCDF file
+ 
+---OUTPUT-----------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+  2.97631865929489E+00  1.71837837912920E+00  0.00000000000000E+00
+  2.97631865929489E+00 -1.71837837912920E+00 -3.47498847295358E+00
+  2.97631865929489E+00 -1.71837837912920E+00  3.47498847295358E+00
+ Reduced coordinates (xred)
+  3.33333333333333E-01  6.66666666666667E-01  0.00000000000000E+00
+  6.66666666666667E-01  3.33333333333333E-01 -9.19442350000000E-02
+  6.66666666666667E-01  3.33333333333333E-01  9.19442350000000E-02
+ Cartesian forces (fcart) [Ha/bohr]; max,rms= 1.00000+100 1.00000+100 (free atoms)
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+  9.99999999990000E+99  9.99999999990000E+99  9.99999999990000E+99
+ Gradient of E wrt nuclear positions in reduced coordinates (gred)
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+  2.17881647807093+100 -8.13145379660118+100 -3.77945226573349+101
+ Total energy (etotal) [Ha]= -9.23435497077835E+01
+ 
+ Difference of energy with previous step (new-old):
+           Absolute (Ha)= 0.00000E+00
+           Relative     = 0.00000E+00
+ fconv : at Broyd/MD step   2, gradients have not converged yet. 
+  max grad (force/stress) = 1.0000+100 > tolmxf= 5.0000E-04 ha/bohr (free atoms)
+ 
+ EXIT:           1           1
+ {mover_itime: 2 , wall_time: '  5.93 [s] '} <<< TIME
+ 
+--- Iteration: ( 3/10) Internal Cycle: (1/1)
+--------------------------------------------------------------------------------
+ 
+ Cartesian coordinates (xcart) [bohr]
+                   NaN                   NaN                   NaN
+                   NaN                   NaN                   NaN
+                   NaN                   NaN                   NaN
+ Reduced coordinates (xred)
+                   NaN                   NaN                   NaN
+                   NaN                   NaN                   NaN
+                   NaN                   NaN                   NaN
+ WARNING: ATOMIC COORDINATES WERE SYMMETRIZED
+ DIFFERENCES:
+                     NaN                     NaN                     NaN
+                     NaN                     NaN                     NaN
+                     NaN                     NaN                     NaN
+ 
+---SELF-CONSISTENT-FIELD CONVERGENCE--------------------------------------------
+ 
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  30  30 192
+         ecut(hartree)=     30.000   => boxcut(ratio)=   2.04554
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FA3F7E2D359  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FA3F2E99630  Unknown               Unknown  Unknown
+abinit             0000000001F13C49  Unknown               Unknown  Unknown
+abinit             000000000172C114  Unknown               Unknown  Unknown
+abinit             0000000000735858  Unknown               Unknown  Unknown
+abinit             000000000071B156  Unknown               Unknown  Unknown
+abinit             000000000071AB2B  Unknown               Unknown  Unknown
+abinit             00000000006887FC  Unknown               Unknown  Unknown
+abinit             0000000000665FD1  Unknown               Unknown  Unknown
+abinit             00000000004419F0  Unknown               Unknown  Unknown
+abinit             0000000000426719  Unknown               Unknown  Unknown
+abinit             000000000040F4E4  Unknown               Unknown  Unknown
+abinit             000000000040CB22  Unknown               Unknown  Unknown
+libc-2.17.so       00007FA3EFF49555  __libc_start_main     Unknown  Unknown
+abinit             000000000040CA29  Unknown               Unknown  Unknown
