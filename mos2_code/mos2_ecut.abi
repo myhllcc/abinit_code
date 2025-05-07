@@ -1,10 +1,10 @@
 # Monolayer MoS2: computation of the total energy
 
-ndtset 1
+ndtset 4
 # Unit cell
 acell  3.15 3.15 20 angstrom
-#ecut:? 10    ecut+? 5
-ecut 10 
+ecut:? 10    ecut+? 5
+#ecut 10 
 nsym 1
 chksymbreak 0
 
